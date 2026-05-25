@@ -1,0 +1,135 @@
+==========================================================
+  DAY 11 - Generics + Enums
+  Phase: Core Java
+==========================================================
+
+OVERVIEW:
+  Generic TestResult<T> class, Enum for environments/browsers/status, bounded wildcards, type-safe collections
+
+TOPICS COVERED:
+    - Generic TestResult<T> class
+  - Enum for environments/browsers/status
+  - bounded wildcards
+  - type-safe collections
+
+LEARNING OBJECTIVES:
+  - Understand Generics + Enums concepts thoroughly
+  - Apply Generics + Enums in test automation scenarios
+  - Be able to explain Generics + Enums in interviews
+  - Write production-quality code using Generics + Enums
+
+
+----------------------------------------------------------
+EXAMPLE 1: Generics + Enums - Fundamentals
+----------------------------------------------------------
+// Topic: Generics + Enums
+// Phase: Core Java
+// Key concepts covered in this example:
+// Generic TestResult<T> class
+
+public class Day11Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 11: Generics + Enums ===");
+        System.out.println("Phase: Core Java");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of Generics + Enums
+        // Refer to the theory section above and implement:
+        // Generic TestResult<T> class
+
+        System.out.println("Day 11 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Generics + Enums - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of Generics + Enums
+// Key points: Enum for environments/browsers/status
+
+public class Day11Example2 {
+    // Define relevant fields and methods for Generics + Enums
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: Generics + Enums");
+        // Core implementation goes here
+        // Focus on: Enum for environments/browsers/status
+    }
+
+    public static void main(String[] args) {
+        Day11Example2 demo = new Day11Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Generics + Enums - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying Generics + Enums in test automation
+
+public class Day11Example3 {
+
+    // Scenario: Using Generics + Enums in an automation framework
+    // This is how Generics + Enums is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: Generics + Enums");
+        // bounded wildcards
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Generics + Enums - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of Generics + Enums with best practices
+
+public class Day11Example4 {
+
+    // Best practices for Generics + Enums:
+    // 1. Always follow Generics + Enums principles consistently
+    // 2. type-safe collections
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced Generics + Enums demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: Generics + Enums");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 11 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 11 with previous days
+  3. Write 2 more examples of your own on Generics + Enums
+  4. Push all code to GitHub with commit message: "Day 11: Generics + Enums"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: generics)
+  - https://www.baeldung.com (search: generics)
+  - YouTube: Search "Generics + Enums tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is Generics + Enums and why is it important in test automation?
+  Q2: How have you used Generics + Enums in your previous automation projects?
+  Q3: What are the best practices for Generics + Enums?
+  Q4: How does Generics + Enums compare with alternatives?
+
+END OF DAY 11
+Review, practice, and push to GitHub before sleeping!
+==========================================================

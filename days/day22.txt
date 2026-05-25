@@ -1,0 +1,134 @@
+==========================================================
+  DAY 22 - Data-Driven Testing
+  Phase: Selenium
+==========================================================
+
+OVERVIEW:
+  TestNG @DataProvider, reading from Excel with Apache POI, parameterized tests
+
+TOPICS COVERED:
+    - TestNG @DataProvider
+  - reading from Excel with Apache POI
+  - parameterized tests
+
+LEARNING OBJECTIVES:
+  - Understand Data-Driven Testing concepts thoroughly
+  - Apply Data-Driven Testing in test automation scenarios
+  - Be able to explain Data-Driven Testing in interviews
+  - Write production-quality code using Data-Driven Testing
+
+
+----------------------------------------------------------
+EXAMPLE 1: Data-Driven Testing - Fundamentals
+----------------------------------------------------------
+// Topic: Data-Driven Testing
+// Phase: Selenium
+// Key concepts covered in this example:
+// TestNG @DataProvider
+
+public class Day22Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 22: Data-Driven Testing ===");
+        System.out.println("Phase: Selenium");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of Data-Driven Testing
+        // Refer to the theory section above and implement:
+        // TestNG @DataProvider
+
+        System.out.println("Day 22 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Data-Driven Testing - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of Data-Driven Testing
+// Key points: reading from Excel with Apache POI
+
+public class Day22Example2 {
+    // Define relevant fields and methods for Data-Driven Testing
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: Data-Driven Testing");
+        // Core implementation goes here
+        // Focus on: reading from Excel with Apache POI
+    }
+
+    public static void main(String[] args) {
+        Day22Example2 demo = new Day22Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Data-Driven Testing - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying Data-Driven Testing in test automation
+
+public class Day22Example3 {
+
+    // Scenario: Using Data-Driven Testing in an automation framework
+    // This is how Data-Driven Testing is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: Data-Driven Testing");
+        // parameterized tests
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Data-Driven Testing - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of Data-Driven Testing with best practices
+
+public class Day22Example4 {
+
+    // Best practices for Data-Driven Testing:
+    // 1. Always follow Data-Driven Testing principles consistently
+    // 2. parameterized tests
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced Data-Driven Testing demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: Data-Driven Testing");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 22 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 22 with previous days
+  3. Write 2 more examples of your own on Data-Driven Testing
+  4. Push all code to GitHub with commit message: "Day 22: Data-Driven Testing"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: data-driven)
+  - https://www.baeldung.com (search: data-driven)
+  - YouTube: Search "Data-Driven Testing tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is Data-Driven Testing and why is it important in test automation?
+  Q2: How have you used Data-Driven Testing in your previous automation projects?
+  Q3: What are the best practices for Data-Driven Testing?
+  Q4: How does Data-Driven Testing compare with alternatives?
+
+END OF DAY 22
+Review, practice, and push to GitHub before sleeping!
+==========================================================

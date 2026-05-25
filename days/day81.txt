@@ -1,0 +1,135 @@
+==========================================================
+  DAY 81 - Portfolio Project 2 - API Setup
+  Phase: Portfolio
+==========================================================
+
+OVERVIEW:
+  API framework structure, RestAssured config, POJO models, schemas
+
+TOPICS COVERED:
+    - API framework structure
+  - RestAssured config
+  - POJO models
+  - schemas
+
+LEARNING OBJECTIVES:
+  - Understand Portfolio Project 2 - API Setup concepts thoroughly
+  - Apply Portfolio Project 2 - API Setup in test automation scenarios
+  - Be able to explain Portfolio Project 2 - API Setup in interviews
+  - Write production-quality code using Portfolio Project 2 - API Setup
+
+
+----------------------------------------------------------
+EXAMPLE 1: Portfolio Project 2 - API Setup - Fundamentals
+----------------------------------------------------------
+// Topic: Portfolio Project 2 - API Setup
+// Phase: Portfolio
+// Key concepts covered in this example:
+// API framework structure
+
+public class Day81Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 81: Portfolio Project 2 - API Setup ===");
+        System.out.println("Phase: Portfolio");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of Portfolio Project 2 - API Setup
+        // Refer to the theory section above and implement:
+        // API framework structure
+
+        System.out.println("Day 81 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Portfolio Project 2 - API Setup - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of Portfolio Project 2 - API Setup
+// Key points: RestAssured config
+
+public class Day81Example2 {
+    // Define relevant fields and methods for Portfolio Project 2 - API Setup
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: Portfolio Project 2 - API Setup");
+        // Core implementation goes here
+        // Focus on: RestAssured config
+    }
+
+    public static void main(String[] args) {
+        Day81Example2 demo = new Day81Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Portfolio Project 2 - API Setup - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying Portfolio Project 2 - API Setup in test automation
+
+public class Day81Example3 {
+
+    // Scenario: Using Portfolio Project 2 - API Setup in an automation framework
+    // This is how Portfolio Project 2 - API Setup is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: Portfolio Project 2 - API Setup");
+        // POJO models
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Portfolio Project 2 - API Setup - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of Portfolio Project 2 - API Setup with best practices
+
+public class Day81Example4 {
+
+    // Best practices for Portfolio Project 2 - API Setup:
+    // 1. Always follow Portfolio Project 2 - API Setup principles consistently
+    // 2. schemas
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced Portfolio Project 2 - API Setup demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: Portfolio Project 2 - API Setup");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 81 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 81 with previous days
+  3. Write 2 more examples of your own on Portfolio Project 2 - API Setup
+  4. Push all code to GitHub with commit message: "Day 81: Portfolio Project 2 - API Setup"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: portfolio)
+  - https://www.baeldung.com (search: portfolio)
+  - YouTube: Search "Portfolio Project 2 - API Setup tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is Portfolio Project 2 - API Setup and why is it important in test automation?
+  Q2: How have you used Portfolio Project 2 - API Setup in your previous automation projects?
+  Q3: What are the best practices for Portfolio Project 2 - API Setup?
+  Q4: How does Portfolio Project 2 - API Setup compare with alternatives?
+
+END OF DAY 81
+Review, practice, and push to GitHub before sleeping!
+==========================================================

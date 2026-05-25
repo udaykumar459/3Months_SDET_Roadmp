@@ -1,0 +1,137 @@
+==========================================================
+  DAY 21 - Page Object Model (POM)
+  Phase: Selenium
+==========================================================
+
+OVERVIEW:
+  BasePage, LoginPage, DashboardPage, PageFactory, @FindBy, returning page objects
+
+TOPICS COVERED:
+    - BasePage
+  - LoginPage
+  - DashboardPage
+  - PageFactory
+  - @FindBy
+  - returning page objects
+
+LEARNING OBJECTIVES:
+  - Understand Page Object Model (POM) concepts thoroughly
+  - Apply Page Object Model (POM) in test automation scenarios
+  - Be able to explain Page Object Model (POM) in interviews
+  - Write production-quality code using Page Object Model (POM)
+
+
+----------------------------------------------------------
+EXAMPLE 1: Page Object Model (POM) - Fundamentals
+----------------------------------------------------------
+// Topic: Page Object Model (POM)
+// Phase: Selenium
+// Key concepts covered in this example:
+// BasePage
+
+public class Day21Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 21: Page Object Model (POM) ===");
+        System.out.println("Phase: Selenium");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of Page Object Model (POM)
+        // Refer to the theory section above and implement:
+        // BasePage
+
+        System.out.println("Day 21 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Page Object Model (POM) - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of Page Object Model (POM)
+// Key points: LoginPage
+
+public class Day21Example2 {
+    // Define relevant fields and methods for Page Object Model (POM)
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: Page Object Model (POM)");
+        // Core implementation goes here
+        // Focus on: LoginPage
+    }
+
+    public static void main(String[] args) {
+        Day21Example2 demo = new Day21Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Page Object Model (POM) - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying Page Object Model (POM) in test automation
+
+public class Day21Example3 {
+
+    // Scenario: Using Page Object Model (POM) in an automation framework
+    // This is how Page Object Model (POM) is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: Page Object Model (POM)");
+        // DashboardPage
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Page Object Model (POM) - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of Page Object Model (POM) with best practices
+
+public class Day21Example4 {
+
+    // Best practices for Page Object Model (POM):
+    // 1. Always follow Page Object Model (POM) principles consistently
+    // 2. returning page objects
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced Page Object Model (POM) demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: Page Object Model (POM)");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 21 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 21 with previous days
+  3. Write 2 more examples of your own on Page Object Model (POM)
+  4. Push all code to GitHub with commit message: "Day 21: Page Object Model (POM)"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: page)
+  - https://www.baeldung.com (search: page)
+  - YouTube: Search "Page Object Model (POM) tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is Page Object Model (POM) and why is it important in test automation?
+  Q2: How have you used Page Object Model (POM) in your previous automation projects?
+  Q3: What are the best practices for Page Object Model (POM)?
+  Q4: How does Page Object Model (POM) compare with alternatives?
+
+END OF DAY 21
+Review, practice, and push to GitHub before sleeping!
+==========================================================

@@ -1,0 +1,141 @@
+==========================================================
+  DAY 14 - Git + GitHub
+  Phase: Core Java
+==========================================================
+
+OVERVIEW:
+  init, clone, add, commit, push, pull, branch, merge, rebase, .gitignore for automation projects
+
+TOPICS COVERED:
+    - init
+  - clone
+  - add
+  - commit
+  - push
+  - pull
+  - branch
+  - merge
+  - rebase
+  - .gitignore for automation projects
+
+LEARNING OBJECTIVES:
+  - Understand Git + GitHub concepts thoroughly
+  - Apply Git + GitHub in test automation scenarios
+  - Be able to explain Git + GitHub in interviews
+  - Write production-quality code using Git + GitHub
+
+
+----------------------------------------------------------
+EXAMPLE 1: Git + GitHub - Fundamentals
+----------------------------------------------------------
+// Topic: Git + GitHub
+// Phase: Core Java
+// Key concepts covered in this example:
+// init
+
+public class Day14Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 14: Git + GitHub ===");
+        System.out.println("Phase: Core Java");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of Git + GitHub
+        // Refer to the theory section above and implement:
+        // init
+
+        System.out.println("Day 14 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Git + GitHub - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of Git + GitHub
+// Key points: clone
+
+public class Day14Example2 {
+    // Define relevant fields and methods for Git + GitHub
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: Git + GitHub");
+        // Core implementation goes here
+        // Focus on: clone
+    }
+
+    public static void main(String[] args) {
+        Day14Example2 demo = new Day14Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Git + GitHub - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying Git + GitHub in test automation
+
+public class Day14Example3 {
+
+    // Scenario: Using Git + GitHub in an automation framework
+    // This is how Git + GitHub is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: Git + GitHub");
+        // add
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Git + GitHub - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of Git + GitHub with best practices
+
+public class Day14Example4 {
+
+    // Best practices for Git + GitHub:
+    // 1. Always follow Git + GitHub principles consistently
+    // 2. .gitignore for automation projects
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced Git + GitHub demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: Git + GitHub");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 14 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 14 with previous days
+  3. Write 2 more examples of your own on Git + GitHub
+  4. Push all code to GitHub with commit message: "Day 14: Git + GitHub"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: git)
+  - https://www.baeldung.com (search: git)
+  - YouTube: Search "Git + GitHub tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is Git + GitHub and why is it important in test automation?
+  Q2: How have you used Git + GitHub in your previous automation projects?
+  Q3: What are the best practices for Git + GitHub?
+  Q4: How does Git + GitHub compare with alternatives?
+
+END OF DAY 14
+Review, practice, and push to GitHub before sleeping!
+==========================================================

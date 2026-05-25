@@ -1,0 +1,136 @@
+==========================================================
+  DAY 51 - Jenkins Freestyle + Pipeline
+  Phase: CI/CD
+==========================================================
+
+OVERVIEW:
+  Freestyle job setup, Jenkinsfile basics, stages, steps, post actions
+
+TOPICS COVERED:
+    - Freestyle job setup
+  - Jenkinsfile basics
+  - stages
+  - steps
+  - post actions
+
+LEARNING OBJECTIVES:
+  - Understand Jenkins Freestyle + Pipeline concepts thoroughly
+  - Apply Jenkins Freestyle + Pipeline in test automation scenarios
+  - Be able to explain Jenkins Freestyle + Pipeline in interviews
+  - Write production-quality code using Jenkins Freestyle + Pipeline
+
+
+----------------------------------------------------------
+EXAMPLE 1: Jenkins Freestyle + Pipeline - Fundamentals
+----------------------------------------------------------
+// Topic: Jenkins Freestyle + Pipeline
+// Phase: CI/CD
+// Key concepts covered in this example:
+// Freestyle job setup
+
+public class Day51Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 51: Jenkins Freestyle + Pipeline ===");
+        System.out.println("Phase: CI/CD");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of Jenkins Freestyle + Pipeline
+        // Refer to the theory section above and implement:
+        // Freestyle job setup
+
+        System.out.println("Day 51 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Jenkins Freestyle + Pipeline - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of Jenkins Freestyle + Pipeline
+// Key points: Jenkinsfile basics
+
+public class Day51Example2 {
+    // Define relevant fields and methods for Jenkins Freestyle + Pipeline
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: Jenkins Freestyle + Pipeline");
+        // Core implementation goes here
+        // Focus on: Jenkinsfile basics
+    }
+
+    public static void main(String[] args) {
+        Day51Example2 demo = new Day51Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Jenkins Freestyle + Pipeline - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying Jenkins Freestyle + Pipeline in test automation
+
+public class Day51Example3 {
+
+    // Scenario: Using Jenkins Freestyle + Pipeline in an automation framework
+    // This is how Jenkins Freestyle + Pipeline is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: Jenkins Freestyle + Pipeline");
+        // stages
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Jenkins Freestyle + Pipeline - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of Jenkins Freestyle + Pipeline with best practices
+
+public class Day51Example4 {
+
+    // Best practices for Jenkins Freestyle + Pipeline:
+    // 1. Always follow Jenkins Freestyle + Pipeline principles consistently
+    // 2. post actions
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced Jenkins Freestyle + Pipeline demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: Jenkins Freestyle + Pipeline");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 51 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 51 with previous days
+  3. Write 2 more examples of your own on Jenkins Freestyle + Pipeline
+  4. Push all code to GitHub with commit message: "Day 51: Jenkins Freestyle + Pipeline"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: jenkins)
+  - https://www.baeldung.com (search: jenkins)
+  - YouTube: Search "Jenkins Freestyle + Pipeline tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is Jenkins Freestyle + Pipeline and why is it important in test automation?
+  Q2: How have you used Jenkins Freestyle + Pipeline in your previous automation projects?
+  Q3: What are the best practices for Jenkins Freestyle + Pipeline?
+  Q4: How does Jenkins Freestyle + Pipeline compare with alternatives?
+
+END OF DAY 51
+Review, practice, and push to GitHub before sleeping!
+==========================================================

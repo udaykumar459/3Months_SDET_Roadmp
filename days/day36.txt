@@ -1,0 +1,137 @@
+==========================================================
+  DAY 36 - API Basics + REST Concepts
+  Phase: API Testing
+==========================================================
+
+OVERVIEW:
+  HTTP methods, status codes, request/response structure, headers, body, Postman basics
+
+TOPICS COVERED:
+    - HTTP methods
+  - status codes
+  - request/response structure
+  - headers
+  - body
+  - Postman basics
+
+LEARNING OBJECTIVES:
+  - Understand API Basics + REST Concepts concepts thoroughly
+  - Apply API Basics + REST Concepts in test automation scenarios
+  - Be able to explain API Basics + REST Concepts in interviews
+  - Write production-quality code using API Basics + REST Concepts
+
+
+----------------------------------------------------------
+EXAMPLE 1: API Basics + REST Concepts - Fundamentals
+----------------------------------------------------------
+// Topic: API Basics + REST Concepts
+// Phase: API Testing
+// Key concepts covered in this example:
+// HTTP methods
+
+public class Day36Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 36: API Basics + REST Concepts ===");
+        System.out.println("Phase: API Testing");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of API Basics + REST Concepts
+        // Refer to the theory section above and implement:
+        // HTTP methods
+
+        System.out.println("Day 36 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: API Basics + REST Concepts - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of API Basics + REST Concepts
+// Key points: status codes
+
+public class Day36Example2 {
+    // Define relevant fields and methods for API Basics + REST Concepts
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: API Basics + REST Concepts");
+        // Core implementation goes here
+        // Focus on: status codes
+    }
+
+    public static void main(String[] args) {
+        Day36Example2 demo = new Day36Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: API Basics + REST Concepts - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying API Basics + REST Concepts in test automation
+
+public class Day36Example3 {
+
+    // Scenario: Using API Basics + REST Concepts in an automation framework
+    // This is how API Basics + REST Concepts is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: API Basics + REST Concepts");
+        // request/response structure
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: API Basics + REST Concepts - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of API Basics + REST Concepts with best practices
+
+public class Day36Example4 {
+
+    // Best practices for API Basics + REST Concepts:
+    // 1. Always follow API Basics + REST Concepts principles consistently
+    // 2. Postman basics
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced API Basics + REST Concepts demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: API Basics + REST Concepts");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 36 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 36 with previous days
+  3. Write 2 more examples of your own on API Basics + REST Concepts
+  4. Push all code to GitHub with commit message: "Day 36: API Basics + REST Concepts"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: api)
+  - https://www.baeldung.com (search: api)
+  - YouTube: Search "API Basics + REST Concepts tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is API Basics + REST Concepts and why is it important in test automation?
+  Q2: How have you used API Basics + REST Concepts in your previous automation projects?
+  Q3: What are the best practices for API Basics + REST Concepts?
+  Q4: How does API Basics + REST Concepts compare with alternatives?
+
+END OF DAY 36
+Review, practice, and push to GitHub before sleeping!
+==========================================================

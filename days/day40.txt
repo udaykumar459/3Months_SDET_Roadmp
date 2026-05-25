@@ -1,0 +1,134 @@
+==========================================================
+  DAY 40 - JSON Schema Validation
+  Phase: API Testing
+==========================================================
+
+OVERVIEW:
+  JSON schema structure, matchesJsonSchema, validating response contracts
+
+TOPICS COVERED:
+    - JSON schema structure
+  - matchesJsonSchema
+  - validating response contracts
+
+LEARNING OBJECTIVES:
+  - Understand JSON Schema Validation concepts thoroughly
+  - Apply JSON Schema Validation in test automation scenarios
+  - Be able to explain JSON Schema Validation in interviews
+  - Write production-quality code using JSON Schema Validation
+
+
+----------------------------------------------------------
+EXAMPLE 1: JSON Schema Validation - Fundamentals
+----------------------------------------------------------
+// Topic: JSON Schema Validation
+// Phase: API Testing
+// Key concepts covered in this example:
+// JSON schema structure
+
+public class Day40Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 40: JSON Schema Validation ===");
+        System.out.println("Phase: API Testing");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of JSON Schema Validation
+        // Refer to the theory section above and implement:
+        // JSON schema structure
+
+        System.out.println("Day 40 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: JSON Schema Validation - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of JSON Schema Validation
+// Key points: matchesJsonSchema
+
+public class Day40Example2 {
+    // Define relevant fields and methods for JSON Schema Validation
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: JSON Schema Validation");
+        // Core implementation goes here
+        // Focus on: matchesJsonSchema
+    }
+
+    public static void main(String[] args) {
+        Day40Example2 demo = new Day40Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: JSON Schema Validation - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying JSON Schema Validation in test automation
+
+public class Day40Example3 {
+
+    // Scenario: Using JSON Schema Validation in an automation framework
+    // This is how JSON Schema Validation is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: JSON Schema Validation");
+        // validating response contracts
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: JSON Schema Validation - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of JSON Schema Validation with best practices
+
+public class Day40Example4 {
+
+    // Best practices for JSON Schema Validation:
+    // 1. Always follow JSON Schema Validation principles consistently
+    // 2. validating response contracts
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced JSON Schema Validation demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: JSON Schema Validation");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 40 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 40 with previous days
+  3. Write 2 more examples of your own on JSON Schema Validation
+  4. Push all code to GitHub with commit message: "Day 40: JSON Schema Validation"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: json)
+  - https://www.baeldung.com (search: json)
+  - YouTube: Search "JSON Schema Validation tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is JSON Schema Validation and why is it important in test automation?
+  Q2: How have you used JSON Schema Validation in your previous automation projects?
+  Q3: What are the best practices for JSON Schema Validation?
+  Q4: How does JSON Schema Validation compare with alternatives?
+
+END OF DAY 40
+Review, practice, and push to GitHub before sleeping!
+==========================================================

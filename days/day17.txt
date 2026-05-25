@@ -1,0 +1,136 @@
+==========================================================
+  DAY 17 - WebDriver Commands
+  Phase: Selenium
+==========================================================
+
+OVERVIEW:
+  navigate(), window management, title/URL retrieval, timeouts, cookie management
+
+TOPICS COVERED:
+    - navigate()
+  - window management
+  - title/URL retrieval
+  - timeouts
+  - cookie management
+
+LEARNING OBJECTIVES:
+  - Understand WebDriver Commands concepts thoroughly
+  - Apply WebDriver Commands in test automation scenarios
+  - Be able to explain WebDriver Commands in interviews
+  - Write production-quality code using WebDriver Commands
+
+
+----------------------------------------------------------
+EXAMPLE 1: WebDriver Commands - Fundamentals
+----------------------------------------------------------
+// Topic: WebDriver Commands
+// Phase: Selenium
+// Key concepts covered in this example:
+// navigate()
+
+public class Day17Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 17: WebDriver Commands ===");
+        System.out.println("Phase: Selenium");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of WebDriver Commands
+        // Refer to the theory section above and implement:
+        // navigate()
+
+        System.out.println("Day 17 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: WebDriver Commands - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of WebDriver Commands
+// Key points: window management
+
+public class Day17Example2 {
+    // Define relevant fields and methods for WebDriver Commands
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: WebDriver Commands");
+        // Core implementation goes here
+        // Focus on: window management
+    }
+
+    public static void main(String[] args) {
+        Day17Example2 demo = new Day17Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: WebDriver Commands - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying WebDriver Commands in test automation
+
+public class Day17Example3 {
+
+    // Scenario: Using WebDriver Commands in an automation framework
+    // This is how WebDriver Commands is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: WebDriver Commands");
+        // title/URL retrieval
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: WebDriver Commands - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of WebDriver Commands with best practices
+
+public class Day17Example4 {
+
+    // Best practices for WebDriver Commands:
+    // 1. Always follow WebDriver Commands principles consistently
+    // 2. cookie management
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced WebDriver Commands demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: WebDriver Commands");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 17 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 17 with previous days
+  3. Write 2 more examples of your own on WebDriver Commands
+  4. Push all code to GitHub with commit message: "Day 17: WebDriver Commands"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: webdriver)
+  - https://www.baeldung.com (search: webdriver)
+  - YouTube: Search "WebDriver Commands tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is WebDriver Commands and why is it important in test automation?
+  Q2: How have you used WebDriver Commands in your previous automation projects?
+  Q3: What are the best practices for WebDriver Commands?
+  Q4: How does WebDriver Commands compare with alternatives?
+
+END OF DAY 17
+Review, practice, and push to GitHub before sleeping!
+==========================================================

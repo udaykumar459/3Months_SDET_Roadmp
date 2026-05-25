@@ -1,0 +1,269 @@
+==========================================================
+  DAY 10 - Java 8 Features (Critical for SDET)
+  Phase: Core Java | Week 2
+==========================================================
+
+TOPICS COVERED:
+  - Lambda Expressions
+  - Functional Interfaces (Predicate, Function, Consumer, Supplier)
+  - Stream API (filter, map, collect, reduce, sorted)
+  - Optional class
+  - Method References
+
+LEARNING OBJECTIVES:
+  - Write clean, concise test code
+  - Process test data collections efficiently
+  - Use functional style in automation
+
+----------------------------------------------------------
+EXAMPLE 1: Lambda Expressions
+----------------------------------------------------------
+import java.util.*;
+import java.util.function.*;
+
+public class LambdaDemo {
+    public static void main(String[] args) {
+        // Old way
+        List<String> testCases = new ArrayList<>(
+            Arrays.asList("TC001_Login", "TC002_Logout", "TC003_Search", "TC004_Login", "TC005_Checkout")
+        );
+
+        // Old way - Anonymous class
+        Collections.sort(testCases, new Comparator<String>() {
+            @Override
+            public int compare(String a, String b) { return a.compareTo(b); }
+        });
+
+        // Lambda way - cleaner
+        testCases.sort((a, b) -> a.compareTo(b));
+
+        // Even cleaner - method reference
+        testCases.sort(String::compareTo);
+
+        // Runnable with lambda
+        Runnable openBrowser = () -> System.out.println("Opening browser...");
+        openBrowser.run();
+
+        // Predicate - test condition
+        Predicate<String> isLoginTest    = tc -> tc.contains("Login");
+        Predicate<String> isHighPriority = tc -> tc.startsWith("TC001") || tc.startsWith("TC002");
+
+        for (String tc : testCases) {
+            if (isLoginTest.test(tc)) {
+                System.out.println("Login test found: " + tc);
+            }
+        }
+
+        // Combine predicates
+        Predicate<String> criticalLoginTests = isLoginTest.and(isHighPriority);
+        testCases.stream()
+            .filter(criticalLoginTests)
+            .forEach(tc -> System.out.println("Critical: " + tc));
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Stream API for Test Data Processing
+----------------------------------------------------------
+import java.util.*;
+import java.util.stream.*;
+
+public class StreamApiDemo {
+    static class TestResult {
+        String name;
+        String status;
+        int duration;
+        String module;
+
+        TestResult(String name, String status, int duration, String module) {
+            this.name = name; this.status = status;
+            this.duration = duration; this.module = module;
+        }
+        public String toString() { return name + "[" + status + "] " + duration + "ms"; }
+    }
+
+    public static void main(String[] args) {
+        List<TestResult> results = Arrays.asList(
+            new TestResult("Login_Valid", "PASS", 1200, "Auth"),
+            new TestResult("Login_Invalid", "FAIL", 890, "Auth"),
+            new TestResult("Search_Product", "PASS", 2100, "Search"),
+            new TestResult("Add_To_Cart", "PASS", 1500, "Cart"),
+            new TestResult("Checkout", "FAIL", 3200, "Cart"),
+            new TestResult("Logout", "PASS", 450, "Auth")
+        );
+
+        // Filter - get only failed tests
+        System.out.println("=== FAILED TESTS ===");
+        results.stream()
+            .filter(r -> r.status.equals("FAIL"))
+            .forEach(r -> System.out.println("  FAIL: " + r.name));
+
+        // Map - extract just names
+        System.out.println("\n=== ALL TEST NAMES ===");
+        List<String> names = results.stream()
+            .map(r -> r.name)
+            .collect(Collectors.toList());
+        names.forEach(System.out::println);
+
+        // Count
+        long passCount = results.stream().filter(r -> r.status.equals("PASS")).count();
+        long failCount = results.stream().filter(r -> r.status.equals("FAIL")).count();
+        System.out.println("\nPASS: " + passCount + " | FAIL: " + failCount);
+
+        // Sum and Average
+        int totalDuration = results.stream().mapToInt(r -> r.duration).sum();
+        double avgDuration = results.stream().mapToInt(r -> r.duration).average().orElse(0);
+        System.out.println("Total duration: " + totalDuration + "ms");
+        System.out.printf("Avg duration:   %.0fms%n", avgDuration);
+
+        // Max duration
+        results.stream()
+            .max(Comparator.comparingInt(r -> r.duration))
+            .ifPresent(r -> System.out.println("Slowest test: " + r.name + " (" + r.duration + "ms)"));
+
+        // Group by module
+        System.out.println("\n=== TESTS BY MODULE ===");
+        Map<String, List<TestResult>> byModule = results.stream()
+            .collect(Collectors.groupingBy(r -> r.module));
+        byModule.forEach((module, tests) -> {
+            System.out.println(module + ": " + tests.size() + " tests");
+        });
+
+        // Sorted by duration descending
+        System.out.println("\n=== SORTED BY DURATION (slowest first) ===");
+        results.stream()
+            .sorted(Comparator.comparingInt((TestResult r) -> r.duration).reversed())
+            .forEach(r -> System.out.printf("  %-25s %dms%n", r.name, r.duration));
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Optional - Null Safety
+----------------------------------------------------------
+import java.util.*;
+
+public class OptionalDemo {
+    static class WebElement {
+        String text;
+        WebElement(String text) { this.text = text; }
+        String getText() { return text; }
+    }
+
+    public static Optional<WebElement> findElement(String id, boolean exists) {
+        if (exists) return Optional.of(new WebElement("Welcome, User!"));
+        return Optional.empty();
+    }
+
+    public static void main(String[] args) {
+        // OLD way - null checks everywhere
+        WebElement el = null;
+        if (el != null) {
+            System.out.println(el.getText());
+        } else {
+            System.out.println("Element not found");
+        }
+
+        // Optional way - cleaner
+        Optional<WebElement> element = findElement("welcome-msg", true);
+
+        // isPresent / get
+        if (element.isPresent()) {
+            System.out.println("Text: " + element.get().getText());
+        }
+
+        // ifPresent - cleaner
+        element.ifPresent(e -> System.out.println("Found: " + e.getText()));
+
+        // orElse - default value
+        WebElement el2 = findElement("missing-el", false)
+            .orElse(new WebElement("DEFAULT TEXT"));
+        System.out.println("Got: " + el2.getText());
+
+        // orElseThrow
+        try {
+            WebElement el3 = findElement("missing-el", false)
+                .orElseThrow(() -> new RuntimeException("Required element not found!"));
+        } catch (RuntimeException e) {
+            System.out.println("Exception: " + e.getMessage());
+        }
+
+        // map - transform if present
+        Optional<String> text = findElement("welcome-msg", true)
+            .map(WebElement::getText)
+            .map(String::toUpperCase);
+        text.ifPresent(t -> System.out.println("Uppercase: " + t));
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Method References + Functional Interfaces
+----------------------------------------------------------
+import java.util.*;
+import java.util.function.*;
+import java.util.stream.*;
+
+public class MethodReferences {
+    static void logTest(String testName) {
+        System.out.println("[LOG] Running: " + testName);
+    }
+
+    static boolean isPassingTest(String result) {
+        return result.startsWith("PASS");
+    }
+
+    static String formatResult(String result) {
+        return ">> " + result.toUpperCase() + " <<";
+    }
+
+    public static void main(String[] args) {
+        List<String> testNames = Arrays.asList(
+            "Login_Test", "Search_Test", "Cart_Test", "Checkout_Test"
+        );
+
+        // Static method reference
+        testNames.forEach(MethodReferences::logTest);
+
+        List<String> results = Arrays.asList("PASS_Login","FAIL_Search","PASS_Cart","SKIP_Checkout");
+
+        // Instance method reference on parameter
+        List<String> upperResults = results.stream()
+            .map(String::toUpperCase)
+            .collect(Collectors.toList());
+
+        // Static method reference as Predicate
+        List<String> passing = results.stream()
+            .filter(MethodReferences::isPassingTest)
+            .collect(Collectors.toList());
+        System.out.println("\nPassing: " + passing);
+
+        // Constructor reference
+        Function<String, StringBuilder> sbFactory = StringBuilder::new;
+        StringBuilder sb = sbFactory.apply("Initial");
+        System.out.println("StringBuilder: " + sb);
+
+        // Supplier
+        Supplier<List<String>> listSupplier = ArrayList::new;
+        List<String> newList = listSupplier.get();
+        newList.add("Chrome");
+        newList.add("Firefox");
+        System.out.println("New list: " + newList);
+
+        // Consumer
+        Consumer<String> printer  = System.out::println;
+        Consumer<String> logger   = s -> System.out.println("[LOG] " + s);
+        Consumer<String> combined = printer.andThen(logger);
+        combined.accept("Test completed");
+    }
+}
+
+----------------------------------------------------------
+RESOURCES:
+  - https://www.baeldung.com/java-8-streams
+  - https://www.baeldung.com/java-optional
+
+PRACTICE TASKS:
+  1. Filter a list of test results to get only FAILed tests using Streams
+  2. Group test cases by module using Collectors.groupingBy
+  3. Use Optional to safely get text from a potentially null WebElement
+  4. Use method references with forEach to print all test names
+==========================================================

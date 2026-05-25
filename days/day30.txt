@@ -1,0 +1,135 @@
+==========================================================
+  DAY 30 - Selenium Grid + Docker
+  Phase: Selenium
+==========================================================
+
+OVERVIEW:
+  Hub/Node architecture, Docker Compose for Grid, RemoteWebDriver, scaling nodes
+
+TOPICS COVERED:
+    - Hub/Node architecture
+  - Docker Compose for Grid
+  - RemoteWebDriver
+  - scaling nodes
+
+LEARNING OBJECTIVES:
+  - Understand Selenium Grid + Docker concepts thoroughly
+  - Apply Selenium Grid + Docker in test automation scenarios
+  - Be able to explain Selenium Grid + Docker in interviews
+  - Write production-quality code using Selenium Grid + Docker
+
+
+----------------------------------------------------------
+EXAMPLE 1: Selenium Grid + Docker - Fundamentals
+----------------------------------------------------------
+// Topic: Selenium Grid + Docker
+// Phase: Selenium
+// Key concepts covered in this example:
+// Hub/Node architecture
+
+public class Day30Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 30: Selenium Grid + Docker ===");
+        System.out.println("Phase: Selenium");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of Selenium Grid + Docker
+        // Refer to the theory section above and implement:
+        // Hub/Node architecture
+
+        System.out.println("Day 30 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Selenium Grid + Docker - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of Selenium Grid + Docker
+// Key points: Docker Compose for Grid
+
+public class Day30Example2 {
+    // Define relevant fields and methods for Selenium Grid + Docker
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: Selenium Grid + Docker");
+        // Core implementation goes here
+        // Focus on: Docker Compose for Grid
+    }
+
+    public static void main(String[] args) {
+        Day30Example2 demo = new Day30Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Selenium Grid + Docker - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying Selenium Grid + Docker in test automation
+
+public class Day30Example3 {
+
+    // Scenario: Using Selenium Grid + Docker in an automation framework
+    // This is how Selenium Grid + Docker is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: Selenium Grid + Docker");
+        // RemoteWebDriver
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Selenium Grid + Docker - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of Selenium Grid + Docker with best practices
+
+public class Day30Example4 {
+
+    // Best practices for Selenium Grid + Docker:
+    // 1. Always follow Selenium Grid + Docker principles consistently
+    // 2. scaling nodes
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced Selenium Grid + Docker demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: Selenium Grid + Docker");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 30 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 30 with previous days
+  3. Write 2 more examples of your own on Selenium Grid + Docker
+  4. Push all code to GitHub with commit message: "Day 30: Selenium Grid + Docker"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: selenium)
+  - https://www.baeldung.com (search: selenium)
+  - YouTube: Search "Selenium Grid + Docker tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is Selenium Grid + Docker and why is it important in test automation?
+  Q2: How have you used Selenium Grid + Docker in your previous automation projects?
+  Q3: What are the best practices for Selenium Grid + Docker?
+  Q4: How does Selenium Grid + Docker compare with alternatives?
+
+END OF DAY 30
+Review, practice, and push to GitHub before sleeping!
+==========================================================

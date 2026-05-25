@@ -1,0 +1,135 @@
+==========================================================
+  DAY 38 - POST, PUT, DELETE Requests
+  Phase: API Testing
+==========================================================
+
+OVERVIEW:
+  Create/Update/Delete via API, JSON body, response extraction, status code assertions
+
+TOPICS COVERED:
+    - Create/Update/Delete via API
+  - JSON body
+  - response extraction
+  - status code assertions
+
+LEARNING OBJECTIVES:
+  - Understand POST, PUT, DELETE Requests concepts thoroughly
+  - Apply POST, PUT, DELETE Requests in test automation scenarios
+  - Be able to explain POST, PUT, DELETE Requests in interviews
+  - Write production-quality code using POST, PUT, DELETE Requests
+
+
+----------------------------------------------------------
+EXAMPLE 1: POST, PUT, DELETE Requests - Fundamentals
+----------------------------------------------------------
+// Topic: POST, PUT, DELETE Requests
+// Phase: API Testing
+// Key concepts covered in this example:
+// Create/Update/Delete via API
+
+public class Day38Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 38: POST, PUT, DELETE Requests ===");
+        System.out.println("Phase: API Testing");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of POST, PUT, DELETE Requests
+        // Refer to the theory section above and implement:
+        // Create/Update/Delete via API
+
+        System.out.println("Day 38 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: POST, PUT, DELETE Requests - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of POST, PUT, DELETE Requests
+// Key points: JSON body
+
+public class Day38Example2 {
+    // Define relevant fields and methods for POST, PUT, DELETE Requests
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: POST, PUT, DELETE Requests");
+        // Core implementation goes here
+        // Focus on: JSON body
+    }
+
+    public static void main(String[] args) {
+        Day38Example2 demo = new Day38Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: POST, PUT, DELETE Requests - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying POST, PUT, DELETE Requests in test automation
+
+public class Day38Example3 {
+
+    // Scenario: Using POST, PUT, DELETE Requests in an automation framework
+    // This is how POST, PUT, DELETE Requests is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: POST, PUT, DELETE Requests");
+        // response extraction
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: POST, PUT, DELETE Requests - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of POST, PUT, DELETE Requests with best practices
+
+public class Day38Example4 {
+
+    // Best practices for POST, PUT, DELETE Requests:
+    // 1. Always follow POST, PUT, DELETE Requests principles consistently
+    // 2. status code assertions
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced POST, PUT, DELETE Requests demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: POST, PUT, DELETE Requests");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 38 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 38 with previous days
+  3. Write 2 more examples of your own on POST, PUT, DELETE Requests
+  4. Push all code to GitHub with commit message: "Day 38: POST, PUT, DELETE Requests"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: post,)
+  - https://www.baeldung.com (search: post,)
+  - YouTube: Search "POST, PUT, DELETE Requests tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is POST, PUT, DELETE Requests and why is it important in test automation?
+  Q2: How have you used POST, PUT, DELETE Requests in your previous automation projects?
+  Q3: What are the best practices for POST, PUT, DELETE Requests?
+  Q4: How does POST, PUT, DELETE Requests compare with alternatives?
+
+END OF DAY 38
+Review, practice, and push to GitHub before sleeping!
+==========================================================

@@ -1,0 +1,137 @@
+==========================================================
+  DAY 39 - Authentication in APIs
+  Phase: API Testing
+==========================================================
+
+OVERVIEW:
+  Basic auth, Bearer token, OAuth2, API Key, login to get token, token reuse
+
+TOPICS COVERED:
+    - Basic auth
+  - Bearer token
+  - OAuth2
+  - API Key
+  - login to get token
+  - token reuse
+
+LEARNING OBJECTIVES:
+  - Understand Authentication in APIs concepts thoroughly
+  - Apply Authentication in APIs in test automation scenarios
+  - Be able to explain Authentication in APIs in interviews
+  - Write production-quality code using Authentication in APIs
+
+
+----------------------------------------------------------
+EXAMPLE 1: Authentication in APIs - Fundamentals
+----------------------------------------------------------
+// Topic: Authentication in APIs
+// Phase: API Testing
+// Key concepts covered in this example:
+// Basic auth
+
+public class Day39Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 39: Authentication in APIs ===");
+        System.out.println("Phase: API Testing");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of Authentication in APIs
+        // Refer to the theory section above and implement:
+        // Basic auth
+
+        System.out.println("Day 39 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Authentication in APIs - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of Authentication in APIs
+// Key points: Bearer token
+
+public class Day39Example2 {
+    // Define relevant fields and methods for Authentication in APIs
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: Authentication in APIs");
+        // Core implementation goes here
+        // Focus on: Bearer token
+    }
+
+    public static void main(String[] args) {
+        Day39Example2 demo = new Day39Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Authentication in APIs - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying Authentication in APIs in test automation
+
+public class Day39Example3 {
+
+    // Scenario: Using Authentication in APIs in an automation framework
+    // This is how Authentication in APIs is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: Authentication in APIs");
+        // OAuth2
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Authentication in APIs - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of Authentication in APIs with best practices
+
+public class Day39Example4 {
+
+    // Best practices for Authentication in APIs:
+    // 1. Always follow Authentication in APIs principles consistently
+    // 2. token reuse
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced Authentication in APIs demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: Authentication in APIs");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 39 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 39 with previous days
+  3. Write 2 more examples of your own on Authentication in APIs
+  4. Push all code to GitHub with commit message: "Day 39: Authentication in APIs"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: authentication)
+  - https://www.baeldung.com (search: authentication)
+  - YouTube: Search "Authentication in APIs tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is Authentication in APIs and why is it important in test automation?
+  Q2: How have you used Authentication in APIs in your previous automation projects?
+  Q3: What are the best practices for Authentication in APIs?
+  Q4: How does Authentication in APIs compare with alternatives?
+
+END OF DAY 39
+Review, practice, and push to GitHub before sleeping!
+==========================================================

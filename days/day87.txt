@@ -1,0 +1,134 @@
+==========================================================
+  DAY 87 - Interview Prep - Framework Design
+  Phase: Interview
+==========================================================
+
+OVERVIEW:
+  Design patterns in automation, POM advantages, framework architecture decisions
+
+TOPICS COVERED:
+    - Design patterns in automation
+  - POM advantages
+  - framework architecture decisions
+
+LEARNING OBJECTIVES:
+  - Understand Interview Prep - Framework Design concepts thoroughly
+  - Apply Interview Prep - Framework Design in test automation scenarios
+  - Be able to explain Interview Prep - Framework Design in interviews
+  - Write production-quality code using Interview Prep - Framework Design
+
+
+----------------------------------------------------------
+EXAMPLE 1: Interview Prep - Framework Design - Fundamentals
+----------------------------------------------------------
+// Topic: Interview Prep - Framework Design
+// Phase: Interview
+// Key concepts covered in this example:
+// Design patterns in automation
+
+public class Day87Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 87: Interview Prep - Framework Design ===");
+        System.out.println("Phase: Interview");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of Interview Prep - Framework Design
+        // Refer to the theory section above and implement:
+        // Design patterns in automation
+
+        System.out.println("Day 87 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Interview Prep - Framework Design - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of Interview Prep - Framework Design
+// Key points: POM advantages
+
+public class Day87Example2 {
+    // Define relevant fields and methods for Interview Prep - Framework Design
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: Interview Prep - Framework Design");
+        // Core implementation goes here
+        // Focus on: POM advantages
+    }
+
+    public static void main(String[] args) {
+        Day87Example2 demo = new Day87Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Interview Prep - Framework Design - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying Interview Prep - Framework Design in test automation
+
+public class Day87Example3 {
+
+    // Scenario: Using Interview Prep - Framework Design in an automation framework
+    // This is how Interview Prep - Framework Design is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: Interview Prep - Framework Design");
+        // framework architecture decisions
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Interview Prep - Framework Design - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of Interview Prep - Framework Design with best practices
+
+public class Day87Example4 {
+
+    // Best practices for Interview Prep - Framework Design:
+    // 1. Always follow Interview Prep - Framework Design principles consistently
+    // 2. framework architecture decisions
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced Interview Prep - Framework Design demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: Interview Prep - Framework Design");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 87 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 87 with previous days
+  3. Write 2 more examples of your own on Interview Prep - Framework Design
+  4. Push all code to GitHub with commit message: "Day 87: Interview Prep - Framework Design"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: interview)
+  - https://www.baeldung.com (search: interview)
+  - YouTube: Search "Interview Prep - Framework Design tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is Interview Prep - Framework Design and why is it important in test automation?
+  Q2: How have you used Interview Prep - Framework Design in your previous automation projects?
+  Q3: What are the best practices for Interview Prep - Framework Design?
+  Q4: How does Interview Prep - Framework Design compare with alternatives?
+
+END OF DAY 87
+Review, practice, and push to GitHub before sleeping!
+==========================================================

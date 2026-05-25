@@ -1,0 +1,136 @@
+==========================================================
+  DAY 52 - Jenkins Advanced Pipeline
+  Phase: CI/CD
+==========================================================
+
+OVERVIEW:
+  Parameters, parallel stages, environment variables, credentials, notifications
+
+TOPICS COVERED:
+    - Parameters
+  - parallel stages
+  - environment variables
+  - credentials
+  - notifications
+
+LEARNING OBJECTIVES:
+  - Understand Jenkins Advanced Pipeline concepts thoroughly
+  - Apply Jenkins Advanced Pipeline in test automation scenarios
+  - Be able to explain Jenkins Advanced Pipeline in interviews
+  - Write production-quality code using Jenkins Advanced Pipeline
+
+
+----------------------------------------------------------
+EXAMPLE 1: Jenkins Advanced Pipeline - Fundamentals
+----------------------------------------------------------
+// Topic: Jenkins Advanced Pipeline
+// Phase: CI/CD
+// Key concepts covered in this example:
+// Parameters
+
+public class Day52Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 52: Jenkins Advanced Pipeline ===");
+        System.out.println("Phase: CI/CD");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of Jenkins Advanced Pipeline
+        // Refer to the theory section above and implement:
+        // Parameters
+
+        System.out.println("Day 52 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Jenkins Advanced Pipeline - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of Jenkins Advanced Pipeline
+// Key points: parallel stages
+
+public class Day52Example2 {
+    // Define relevant fields and methods for Jenkins Advanced Pipeline
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: Jenkins Advanced Pipeline");
+        // Core implementation goes here
+        // Focus on: parallel stages
+    }
+
+    public static void main(String[] args) {
+        Day52Example2 demo = new Day52Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Jenkins Advanced Pipeline - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying Jenkins Advanced Pipeline in test automation
+
+public class Day52Example3 {
+
+    // Scenario: Using Jenkins Advanced Pipeline in an automation framework
+    // This is how Jenkins Advanced Pipeline is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: Jenkins Advanced Pipeline");
+        // environment variables
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Jenkins Advanced Pipeline - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of Jenkins Advanced Pipeline with best practices
+
+public class Day52Example4 {
+
+    // Best practices for Jenkins Advanced Pipeline:
+    // 1. Always follow Jenkins Advanced Pipeline principles consistently
+    // 2. notifications
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced Jenkins Advanced Pipeline demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: Jenkins Advanced Pipeline");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 52 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 52 with previous days
+  3. Write 2 more examples of your own on Jenkins Advanced Pipeline
+  4. Push all code to GitHub with commit message: "Day 52: Jenkins Advanced Pipeline"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: jenkins)
+  - https://www.baeldung.com (search: jenkins)
+  - YouTube: Search "Jenkins Advanced Pipeline tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is Jenkins Advanced Pipeline and why is it important in test automation?
+  Q2: How have you used Jenkins Advanced Pipeline in your previous automation projects?
+  Q3: What are the best practices for Jenkins Advanced Pipeline?
+  Q4: How does Jenkins Advanced Pipeline compare with alternatives?
+
+END OF DAY 52
+Review, practice, and push to GitHub before sleeping!
+==========================================================

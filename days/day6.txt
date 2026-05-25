@@ -1,0 +1,301 @@
+==========================================================
+  DAY 6 - OOP Part 3: Encapsulation + Abstraction + Interface
+  Phase: Core Java | Week 1
+==========================================================
+
+TOPICS COVERED:
+  - Encapsulation (private fields + getters/setters)
+  - Abstract class and abstract methods
+  - Interface and implements
+  - Difference between abstract class and interface
+  - Multiple interface implementation
+
+LEARNING OBJECTIVES:
+  - Design reusable automation components
+  - Define contracts for test drivers
+  - Implement proper access control
+
+----------------------------------------------------------
+EXAMPLE 1: Encapsulation - Test Result Class
+----------------------------------------------------------
+public class TestResult {
+    private String testName;
+    private String status;
+    private long executionTimeMs;
+    private String errorMessage;
+    private String screenshotPath;
+
+    public TestResult(String testName) {
+        this.testName = testName;
+        this.status = "NOT_RUN";
+        this.executionTimeMs = 0;
+    }
+
+    // Getters
+    public String getTestName()       { return testName; }
+    public String getStatus()         { return status; }
+    public long getExecutionTimeMs()  { return executionTimeMs; }
+    public String getErrorMessage()   { return errorMessage; }
+    public boolean isPassed()         { return "PASS".equals(status); }
+
+    // Setters with validation
+    public void setStatus(String status) {
+        if (status.equals("PASS") || status.equals("FAIL") || status.equals("SKIP")) {
+            this.status = status;
+        } else {
+            throw new IllegalArgumentException("Invalid status: " + status);
+        }
+    }
+
+    public void setExecutionTimeMs(long ms) {
+        if (ms < 0) throw new IllegalArgumentException("Time cannot be negative");
+        this.executionTimeMs = ms;
+    }
+
+    public void setError(String errorMessage) {
+        this.errorMessage = errorMessage;
+        this.status = "FAIL";
+    }
+
+    public void printSummary() {
+        System.out.printf("%-40s [%s] (%d ms)%n", testName, status, executionTimeMs);
+        if (errorMessage != null) {
+            System.out.println("  Error: " + errorMessage);
+        }
+    }
+
+    public static void main(String[] args) {
+        TestResult r1 = new TestResult("Login with valid credentials");
+        r1.setStatus("PASS");
+        r1.setExecutionTimeMs(1234);
+
+        TestResult r2 = new TestResult("Login with locked user");
+        r2.setError("Expected error message not displayed");
+        r2.setExecutionTimeMs(890);
+
+        r1.printSummary();
+        r2.printSummary();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Abstract Class - WebDriver Base
+----------------------------------------------------------
+public abstract class AbstractDriver {
+    protected String browserName;
+    protected boolean headless;
+    protected int timeout;
+
+    public AbstractDriver(String browserName) {
+        this.browserName = browserName;
+        this.headless = false;
+        this.timeout = 30;
+    }
+
+    // Abstract methods - must be implemented by child classes
+    public abstract void initialize();
+    public abstract void maximize();
+
+    // Concrete methods - shared by all drivers
+    public void get(String url) {
+        System.out.println("[" + browserName + "] Navigating to: " + url);
+    }
+
+    public void quit() {
+        System.out.println("[" + browserName + "] Browser closed");
+    }
+
+    public void setHeadless(boolean headless) {
+        this.headless = headless;
+        System.out.println("Headless mode: " + headless);
+    }
+}
+
+public class ChromeDriver2 extends AbstractDriver {
+    public ChromeDriver2() {
+        super("Chrome");
+    }
+
+    @Override
+    public void initialize() {
+        System.out.println("Setting up ChromeOptions...");
+        System.out.println("Loading ChromeDriver binary...");
+        System.out.println("Chrome initialized" + (headless ? " (headless)" : ""));
+    }
+
+    @Override
+    public void maximize() {
+        System.out.println("Chrome window maximized");
+    }
+}
+
+public class FirefoxDriver2 extends AbstractDriver {
+    public FirefoxDriver2() {
+        super("Firefox");
+    }
+
+    @Override
+    public void initialize() {
+        System.out.println("Setting up FirefoxOptions...");
+        System.out.println("Loading GeckoDriver binary...");
+        System.out.println("Firefox initialized");
+    }
+
+    @Override
+    public void maximize() {
+        System.out.println("Firefox window maximized");
+    }
+
+    public static void main(String[] args) {
+        AbstractDriver chrome = new ChromeDriver2();
+        chrome.initialize();
+        chrome.maximize();
+        chrome.get("https://saucedemo.com");
+        chrome.quit();
+
+        AbstractDriver firefox = new FirefoxDriver2();
+        firefox.initialize();
+        firefox.get("https://saucedemo.com");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Interface - TestActions Contract
+----------------------------------------------------------
+interface Clickable {
+    void click();
+    default void clickAndWait(int ms) {
+        click();
+        System.out.println("Waiting " + ms + "ms after click");
+    }
+}
+
+interface Typeable {
+    void type(String text);
+    void clear();
+}
+
+interface Verifiable {
+    boolean isDisplayed();
+    boolean isEnabled();
+    String getText();
+}
+
+// A PageElement implements all interfaces
+public class PageElement implements Clickable, Typeable, Verifiable {
+    private String name;
+    private String locator;
+
+    public PageElement(String name, String locator) {
+        this.name = name;
+        this.locator = locator;
+    }
+
+    @Override public void click() {
+        System.out.println("Clicking: " + name + " [" + locator + "]");
+    }
+
+    @Override public void type(String text) {
+        System.out.println("Typing '" + text + "' into: " + name);
+    }
+
+    @Override public void clear() {
+        System.out.println("Clearing: " + name);
+    }
+
+    @Override public boolean isDisplayed() {
+        System.out.println("Checking visibility of: " + name);
+        return true;
+    }
+
+    @Override public boolean isEnabled() { return true; }
+
+    @Override public String getText() {
+        return "Sample text from " + name;
+    }
+
+    public static void main(String[] args) {
+        PageElement usernameField = new PageElement("Username", "id=user-name");
+        PageElement loginButton   = new PageElement("Login Button", "id=login-button");
+
+        usernameField.clear();
+        usernameField.type("standard_user");
+        System.out.println("Visible: " + usernameField.isDisplayed());
+        loginButton.click();
+        loginButton.clickAndWait(500);
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Interface vs Abstract Class Comparison
+----------------------------------------------------------
+// Interface: pure contract, multiple implementation
+interface Reportable {
+    void generateReport();
+    void sendEmail(String recipient);
+    default String getReportTitle() { return "Test Report"; }
+}
+
+interface Loggable {
+    void log(String level, String message);
+    default void info(String msg)  { log("INFO", msg); }
+    default void error(String msg) { log("ERROR", msg); }
+}
+
+// Abstract class: partial implementation, single inheritance
+abstract class BaseReport implements Reportable, Loggable {
+    protected String reportName;
+    protected String environment;
+
+    public BaseReport(String reportName, String env) {
+        this.reportName = reportName;
+        this.environment = env;
+    }
+
+    @Override
+    public void log(String level, String msg) {
+        System.out.printf("[%s] [%s] %s%n", level, reportName, msg);
+    }
+
+    public abstract void addTestResults();
+}
+
+public class AllureReport extends BaseReport {
+    public AllureReport(String env) { super("AllureReport", env); }
+
+    @Override
+    public void generateReport() {
+        info("Generating Allure report...");
+        System.out.println("allure serve target/allure-results");
+        info("Report generated at: target/site/allure-maven-plugin");
+    }
+
+    @Override
+    public void sendEmail(String recipient) {
+        info("Sending report to: " + recipient);
+    }
+
+    @Override
+    public void addTestResults() {
+        info("Adding test results to Allure...");
+    }
+
+    public static void main(String[] args) {
+        AllureReport report = new AllureReport("QA");
+        report.addTestResults();
+        report.generateReport();
+        report.sendEmail("team@company.com");
+    }
+}
+
+----------------------------------------------------------
+RESOURCES:
+  - https://www.javatpoint.com/abstract-class-in-java
+  - https://www.javatpoint.com/interface-in-java
+
+PRACTICE TASKS:
+  1. Create a TestLogger interface with log(), info(), warn(), error() methods
+  2. Create ConsoleLogger and FileLogger classes implementing TestLogger
+  3. Create abstract BaseTest with abstract runTest() method
+  4. Implement LoginTest and SearchTest extending BaseTest
+==========================================================

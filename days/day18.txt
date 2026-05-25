@@ -1,0 +1,138 @@
+==========================================================
+  DAY 18 - WebElement Interactions
+  Phase: Selenium
+==========================================================
+
+OVERVIEW:
+  click, sendKeys, clear, getText, getAttribute, getCssValue, isDisplayed/Enabled/Selected
+
+TOPICS COVERED:
+    - click
+  - sendKeys
+  - clear
+  - getText
+  - getAttribute
+  - getCssValue
+  - isDisplayed/Enabled/Selected
+
+LEARNING OBJECTIVES:
+  - Understand WebElement Interactions concepts thoroughly
+  - Apply WebElement Interactions in test automation scenarios
+  - Be able to explain WebElement Interactions in interviews
+  - Write production-quality code using WebElement Interactions
+
+
+----------------------------------------------------------
+EXAMPLE 1: WebElement Interactions - Fundamentals
+----------------------------------------------------------
+// Topic: WebElement Interactions
+// Phase: Selenium
+// Key concepts covered in this example:
+// click
+
+public class Day18Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 18: WebElement Interactions ===");
+        System.out.println("Phase: Selenium");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of WebElement Interactions
+        // Refer to the theory section above and implement:
+        // click
+
+        System.out.println("Day 18 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: WebElement Interactions - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of WebElement Interactions
+// Key points: sendKeys
+
+public class Day18Example2 {
+    // Define relevant fields and methods for WebElement Interactions
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: WebElement Interactions");
+        // Core implementation goes here
+        // Focus on: sendKeys
+    }
+
+    public static void main(String[] args) {
+        Day18Example2 demo = new Day18Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: WebElement Interactions - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying WebElement Interactions in test automation
+
+public class Day18Example3 {
+
+    // Scenario: Using WebElement Interactions in an automation framework
+    // This is how WebElement Interactions is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: WebElement Interactions");
+        // clear
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: WebElement Interactions - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of WebElement Interactions with best practices
+
+public class Day18Example4 {
+
+    // Best practices for WebElement Interactions:
+    // 1. Always follow WebElement Interactions principles consistently
+    // 2. isDisplayed/Enabled/Selected
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced WebElement Interactions demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: WebElement Interactions");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 18 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 18 with previous days
+  3. Write 2 more examples of your own on WebElement Interactions
+  4. Push all code to GitHub with commit message: "Day 18: WebElement Interactions"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: webelement)
+  - https://www.baeldung.com (search: webelement)
+  - YouTube: Search "WebElement Interactions tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is WebElement Interactions and why is it important in test automation?
+  Q2: How have you used WebElement Interactions in your previous automation projects?
+  Q3: What are the best practices for WebElement Interactions?
+  Q4: How does WebElement Interactions compare with alternatives?
+
+END OF DAY 18
+Review, practice, and push to GitHub before sleeping!
+==========================================================

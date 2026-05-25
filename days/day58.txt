@@ -1,0 +1,135 @@
+==========================================================
+  DAY 58 - Docker Compose
+  Phase: CI/CD
+==========================================================
+
+OVERVIEW:
+  Multi-service compose, Selenium Grid with Docker, scaling, networking
+
+TOPICS COVERED:
+    - Multi-service compose
+  - Selenium Grid with Docker
+  - scaling
+  - networking
+
+LEARNING OBJECTIVES:
+  - Understand Docker Compose concepts thoroughly
+  - Apply Docker Compose in test automation scenarios
+  - Be able to explain Docker Compose in interviews
+  - Write production-quality code using Docker Compose
+
+
+----------------------------------------------------------
+EXAMPLE 1: Docker Compose - Fundamentals
+----------------------------------------------------------
+// Topic: Docker Compose
+// Phase: CI/CD
+// Key concepts covered in this example:
+// Multi-service compose
+
+public class Day58Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 58: Docker Compose ===");
+        System.out.println("Phase: CI/CD");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of Docker Compose
+        // Refer to the theory section above and implement:
+        // Multi-service compose
+
+        System.out.println("Day 58 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Docker Compose - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of Docker Compose
+// Key points: Selenium Grid with Docker
+
+public class Day58Example2 {
+    // Define relevant fields and methods for Docker Compose
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: Docker Compose");
+        // Core implementation goes here
+        // Focus on: Selenium Grid with Docker
+    }
+
+    public static void main(String[] args) {
+        Day58Example2 demo = new Day58Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Docker Compose - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying Docker Compose in test automation
+
+public class Day58Example3 {
+
+    // Scenario: Using Docker Compose in an automation framework
+    // This is how Docker Compose is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: Docker Compose");
+        // scaling
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Docker Compose - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of Docker Compose with best practices
+
+public class Day58Example4 {
+
+    // Best practices for Docker Compose:
+    // 1. Always follow Docker Compose principles consistently
+    // 2. networking
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced Docker Compose demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: Docker Compose");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 58 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 58 with previous days
+  3. Write 2 more examples of your own on Docker Compose
+  4. Push all code to GitHub with commit message: "Day 58: Docker Compose"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: docker)
+  - https://www.baeldung.com (search: docker)
+  - YouTube: Search "Docker Compose tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is Docker Compose and why is it important in test automation?
+  Q2: How have you used Docker Compose in your previous automation projects?
+  Q3: What are the best practices for Docker Compose?
+  Q4: How does Docker Compose compare with alternatives?
+
+END OF DAY 58
+Review, practice, and push to GitHub before sleeping!
+==========================================================

@@ -1,0 +1,236 @@
+==========================================================
+  DAY 8 - Exception Handling
+  Phase: Core Java | Week 2
+==========================================================
+
+TOPICS COVERED:
+  - try/catch/finally blocks
+  - Checked vs Unchecked exceptions
+  - throws and throw keywords
+  - Custom exceptions
+  - Multi-catch blocks
+  - try-with-resources
+
+LEARNING OBJECTIVES:
+  - Handle failures gracefully in test automation
+  - Create meaningful test failure messages
+  - Ensure cleanup runs even on failures
+
+----------------------------------------------------------
+EXAMPLE 1: Basic try-catch-finally
+----------------------------------------------------------
+public class BasicExceptionHandling {
+    public static void main(String[] args) {
+        WebDriver driver = null;
+
+        try {
+            System.out.println("[1] Launching Chrome browser...");
+            // Simulating driver launch
+            driver = null;  // assume driver initialized
+
+            System.out.println("[2] Navigating to login page...");
+            if (driver == null) {
+                throw new RuntimeException("WebDriver not initialized");
+            }
+
+            System.out.println("[3] Performing login...");
+            System.out.println("[4] Verifying dashboard...");
+
+        } catch (RuntimeException e) {
+            System.out.println("[ERROR] Test failed: " + e.getMessage());
+            System.out.println("[ERROR] Capturing failure screenshot...");
+
+        } catch (Exception e) {
+            System.out.println("[ERROR] Unexpected error: " + e.getMessage());
+
+        } finally {
+            // ALWAYS runs - perfect for cleanup
+            System.out.println("[FINALLY] Closing browser (always runs)");
+            if (driver != null) {
+                System.out.println("[FINALLY] Driver quit");
+            }
+        }
+    }
+
+    // Simulated class
+    static class WebDriver {}
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Custom Exceptions for Test Framework
+----------------------------------------------------------
+// Custom exception hierarchy
+public class AutomationException extends RuntimeException {
+    private String testName;
+    private String screenshotPath;
+
+    public AutomationException(String message, String testName) {
+        super(message);
+        this.testName = testName;
+    }
+
+    public String getTestName() { return testName; }
+    public String getScreenshotPath() { return screenshotPath; }
+    public void setScreenshotPath(String path) { this.screenshotPath = path; }
+}
+
+public class ElementNotFoundException extends AutomationException {
+    private String locator;
+
+    public ElementNotFoundException(String locator, String testName) {
+        super("Element not found: " + locator, testName);
+        this.locator = locator;
+    }
+
+    public String getLocator() { return locator; }
+}
+
+public class PageLoadException extends AutomationException {
+    public PageLoadException(String url, String testName) {
+        super("Page did not load: " + url, testName);
+    }
+}
+
+public class CustomExceptionDemo {
+    public static void clickElement(String locator, String testName) {
+        boolean elementFound = false;  // simulating not found
+        if (!elementFound) {
+            throw new ElementNotFoundException(locator, testName);
+        }
+        System.out.println("Clicked: " + locator);
+    }
+
+    public static void main(String[] args) {
+        try {
+            clickElement("id=login-button", "TC001_Login");
+        } catch (ElementNotFoundException e) {
+            System.out.println("TEST FAILED: " + e.getMessage());
+            System.out.println("Test Name: " + e.getTestName());
+            System.out.println("Locator: " + e.getLocator());
+        } catch (AutomationException e) {
+            System.out.println("AUTOMATION ERROR: " + e.getMessage());
+        }
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Multi-catch and Re-throw
+----------------------------------------------------------
+import java.io.*;
+import java.util.*;
+
+public class MultiCatchDemo {
+    public static Properties loadConfig(String path) throws Exception {
+        Properties props = new Properties();
+        try {
+            FileInputStream fis = new FileInputStream(path);
+            props.load(fis);
+            return props;
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException("Config file not found: " + path, e);
+        } catch (IOException e) {
+            throw new RuntimeException("Error reading config: " + path, e);
+        }
+    }
+
+    public static int parseTimeout(String value) {
+        try {
+            return Integer.parseInt(value);
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid timeout value: '" + value + "', using default 30");
+            return 30;
+        }
+    }
+
+    public static String getElement(List<String> list, int index) {
+        try {
+            return list.get(index);
+        } catch (IndexOutOfBoundsException e) {
+            System.out.println("Index " + index + " out of bounds (size=" + list.size() + ")");
+            return null;
+        } catch (NullPointerException e) {
+            System.out.println("List is null");
+            return null;
+        }
+    }
+
+    public static void main(String[] args) {
+        // Test parseTimeout
+        System.out.println("Timeout: " + parseTimeout("45"));
+        System.out.println("Timeout: " + parseTimeout("abc"));
+
+        // Test getElement
+        List<String> tests = Arrays.asList("TC001", "TC002", "TC003");
+        System.out.println("Test at 1: " + getElement(tests, 1));
+        System.out.println("Test at 10: " + getElement(tests, 10));
+        System.out.println("Test from null: " + getElement(null, 0));
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: try-with-resources (AutoCloseable)
+----------------------------------------------------------
+import java.io.*;
+import java.sql.*;
+
+public class TryWithResources {
+
+    // Custom resource that implements AutoCloseable
+    static class BrowserSession implements AutoCloseable {
+        String sessionId;
+
+        public BrowserSession(String browser) {
+            this.sessionId = "SESSION_" + System.currentTimeMillis();
+            System.out.println("Browser session opened: " + browser + " [" + sessionId + "]");
+        }
+
+        public void runTest(String testName) {
+            System.out.println("[" + sessionId + "] Running: " + testName);
+        }
+
+        @Override
+        public void close() {
+            System.out.println("Browser session closed: " + sessionId);
+        }
+    }
+
+    // File reading with try-with-resources
+    public static void readTestData(String filePath) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+            String line;
+            int lineNum = 1;
+            while ((line = reader.readLine()) != null) {
+                System.out.println("Line " + lineNum++ + ": " + line);
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found: " + filePath);
+        } catch (IOException e) {
+            System.out.println("Error reading file: " + e.getMessage());
+        }
+        // reader.close() called automatically!
+    }
+
+    public static void main(String[] args) {
+        // BrowserSession auto-closed after block
+        try (BrowserSession session = new BrowserSession("Chrome")) {
+            session.runTest("Login Test");
+            session.runTest("Search Test");
+            // close() called automatically here!
+        }
+
+        System.out.println("\nSession closed, continuing...");
+        readTestData("test_data.csv");  // file may not exist - handled gracefully
+    }
+}
+
+----------------------------------------------------------
+RESOURCES:
+  - https://www.javatpoint.com/exception-handling-in-java
+  - https://www.baeldung.com/java-exceptions
+
+PRACTICE TASKS:
+  1. Create a custom VerificationException with expected/actual values
+  2. Wrap a file-read in try-catch and print friendly error if file missing
+  3. Create a method that retries 3 times using a loop with try-catch
+  4. Use try-with-resources to simulate a database connection in tests
+==========================================================

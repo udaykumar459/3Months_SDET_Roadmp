@@ -1,0 +1,135 @@
+==========================================================
+  DAY 80 - Portfolio Project 1 - CI/CD
+  Phase: Portfolio
+==========================================================
+
+OVERVIEW:
+  GitHub Actions workflow, Allure report, Docker support, badges
+
+TOPICS COVERED:
+    - GitHub Actions workflow
+  - Allure report
+  - Docker support
+  - badges
+
+LEARNING OBJECTIVES:
+  - Understand Portfolio Project 1 - CI/CD concepts thoroughly
+  - Apply Portfolio Project 1 - CI/CD in test automation scenarios
+  - Be able to explain Portfolio Project 1 - CI/CD in interviews
+  - Write production-quality code using Portfolio Project 1 - CI/CD
+
+
+----------------------------------------------------------
+EXAMPLE 1: Portfolio Project 1 - CI/CD - Fundamentals
+----------------------------------------------------------
+// Topic: Portfolio Project 1 - CI/CD
+// Phase: Portfolio
+// Key concepts covered in this example:
+// GitHub Actions workflow
+
+public class Day80Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 80: Portfolio Project 1 - CI/CD ===");
+        System.out.println("Phase: Portfolio");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of Portfolio Project 1 - CI/CD
+        // Refer to the theory section above and implement:
+        // GitHub Actions workflow
+
+        System.out.println("Day 80 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Portfolio Project 1 - CI/CD - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of Portfolio Project 1 - CI/CD
+// Key points: Allure report
+
+public class Day80Example2 {
+    // Define relevant fields and methods for Portfolio Project 1 - CI/CD
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: Portfolio Project 1 - CI/CD");
+        // Core implementation goes here
+        // Focus on: Allure report
+    }
+
+    public static void main(String[] args) {
+        Day80Example2 demo = new Day80Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Portfolio Project 1 - CI/CD - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying Portfolio Project 1 - CI/CD in test automation
+
+public class Day80Example3 {
+
+    // Scenario: Using Portfolio Project 1 - CI/CD in an automation framework
+    // This is how Portfolio Project 1 - CI/CD is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: Portfolio Project 1 - CI/CD");
+        // Docker support
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Portfolio Project 1 - CI/CD - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of Portfolio Project 1 - CI/CD with best practices
+
+public class Day80Example4 {
+
+    // Best practices for Portfolio Project 1 - CI/CD:
+    // 1. Always follow Portfolio Project 1 - CI/CD principles consistently
+    // 2. badges
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced Portfolio Project 1 - CI/CD demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: Portfolio Project 1 - CI/CD");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 80 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 80 with previous days
+  3. Write 2 more examples of your own on Portfolio Project 1 - CI/CD
+  4. Push all code to GitHub with commit message: "Day 80: Portfolio Project 1 - CI/CD"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: portfolio)
+  - https://www.baeldung.com (search: portfolio)
+  - YouTube: Search "Portfolio Project 1 - CI/CD tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is Portfolio Project 1 - CI/CD and why is it important in test automation?
+  Q2: How have you used Portfolio Project 1 - CI/CD in your previous automation projects?
+  Q3: What are the best practices for Portfolio Project 1 - CI/CD?
+  Q4: How does Portfolio Project 1 - CI/CD compare with alternatives?
+
+END OF DAY 80
+Review, practice, and push to GitHub before sleeping!
+==========================================================

@@ -1,0 +1,135 @@
+==========================================================
+  DAY 15 - Selenium Introduction + Setup
+  Phase: Selenium
+==========================================================
+
+OVERVIEW:
+  WebDriver architecture, ChromeDriver setup, basic navigation, first Selenium test
+
+TOPICS COVERED:
+    - WebDriver architecture
+  - ChromeDriver setup
+  - basic navigation
+  - first Selenium test
+
+LEARNING OBJECTIVES:
+  - Understand Selenium Introduction + Setup concepts thoroughly
+  - Apply Selenium Introduction + Setup in test automation scenarios
+  - Be able to explain Selenium Introduction + Setup in interviews
+  - Write production-quality code using Selenium Introduction + Setup
+
+
+----------------------------------------------------------
+EXAMPLE 1: Selenium Introduction + Setup - Fundamentals
+----------------------------------------------------------
+// Topic: Selenium Introduction + Setup
+// Phase: Selenium
+// Key concepts covered in this example:
+// WebDriver architecture
+
+public class Day15Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 15: Selenium Introduction + Setup ===");
+        System.out.println("Phase: Selenium");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of Selenium Introduction + Setup
+        // Refer to the theory section above and implement:
+        // WebDriver architecture
+
+        System.out.println("Day 15 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Selenium Introduction + Setup - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of Selenium Introduction + Setup
+// Key points: ChromeDriver setup
+
+public class Day15Example2 {
+    // Define relevant fields and methods for Selenium Introduction + Setup
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: Selenium Introduction + Setup");
+        // Core implementation goes here
+        // Focus on: ChromeDriver setup
+    }
+
+    public static void main(String[] args) {
+        Day15Example2 demo = new Day15Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Selenium Introduction + Setup - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying Selenium Introduction + Setup in test automation
+
+public class Day15Example3 {
+
+    // Scenario: Using Selenium Introduction + Setup in an automation framework
+    // This is how Selenium Introduction + Setup is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: Selenium Introduction + Setup");
+        // basic navigation
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Selenium Introduction + Setup - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of Selenium Introduction + Setup with best practices
+
+public class Day15Example4 {
+
+    // Best practices for Selenium Introduction + Setup:
+    // 1. Always follow Selenium Introduction + Setup principles consistently
+    // 2. first Selenium test
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced Selenium Introduction + Setup demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: Selenium Introduction + Setup");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 15 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 15 with previous days
+  3. Write 2 more examples of your own on Selenium Introduction + Setup
+  4. Push all code to GitHub with commit message: "Day 15: Selenium Introduction + Setup"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: selenium)
+  - https://www.baeldung.com (search: selenium)
+  - YouTube: Search "Selenium Introduction + Setup tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is Selenium Introduction + Setup and why is it important in test automation?
+  Q2: How have you used Selenium Introduction + Setup in your previous automation projects?
+  Q3: What are the best practices for Selenium Introduction + Setup?
+  Q4: How does Selenium Introduction + Setup compare with alternatives?
+
+END OF DAY 15
+Review, practice, and push to GitHub before sleeping!
+==========================================================

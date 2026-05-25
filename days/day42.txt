@@ -1,0 +1,135 @@
+==========================================================
+  DAY 42 - Request/Response Specification
+  Phase: API Testing
+==========================================================
+
+OVERVIEW:
+  RequestSpecification, ResponseSpecification, reusable auth setup, base config
+
+TOPICS COVERED:
+    - RequestSpecification
+  - ResponseSpecification
+  - reusable auth setup
+  - base config
+
+LEARNING OBJECTIVES:
+  - Understand Request/Response Specification concepts thoroughly
+  - Apply Request/Response Specification in test automation scenarios
+  - Be able to explain Request/Response Specification in interviews
+  - Write production-quality code using Request/Response Specification
+
+
+----------------------------------------------------------
+EXAMPLE 1: Request/Response Specification - Fundamentals
+----------------------------------------------------------
+// Topic: Request/Response Specification
+// Phase: API Testing
+// Key concepts covered in this example:
+// RequestSpecification
+
+public class Day42Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 42: Request/Response Specification ===");
+        System.out.println("Phase: API Testing");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of Request/Response Specification
+        // Refer to the theory section above and implement:
+        // RequestSpecification
+
+        System.out.println("Day 42 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Request/Response Specification - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of Request/Response Specification
+// Key points: ResponseSpecification
+
+public class Day42Example2 {
+    // Define relevant fields and methods for Request/Response Specification
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: Request/Response Specification");
+        // Core implementation goes here
+        // Focus on: ResponseSpecification
+    }
+
+    public static void main(String[] args) {
+        Day42Example2 demo = new Day42Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Request/Response Specification - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying Request/Response Specification in test automation
+
+public class Day42Example3 {
+
+    // Scenario: Using Request/Response Specification in an automation framework
+    // This is how Request/Response Specification is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: Request/Response Specification");
+        // reusable auth setup
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Request/Response Specification - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of Request/Response Specification with best practices
+
+public class Day42Example4 {
+
+    // Best practices for Request/Response Specification:
+    // 1. Always follow Request/Response Specification principles consistently
+    // 2. base config
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced Request/Response Specification demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: Request/Response Specification");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 42 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 42 with previous days
+  3. Write 2 more examples of your own on Request/Response Specification
+  4. Push all code to GitHub with commit message: "Day 42: Request/Response Specification"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: request/response)
+  - https://www.baeldung.com (search: request/response)
+  - YouTube: Search "Request/Response Specification tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is Request/Response Specification and why is it important in test automation?
+  Q2: How have you used Request/Response Specification in your previous automation projects?
+  Q3: What are the best practices for Request/Response Specification?
+  Q4: How does Request/Response Specification compare with alternatives?
+
+END OF DAY 42
+Review, practice, and push to GitHub before sleeping!
+==========================================================

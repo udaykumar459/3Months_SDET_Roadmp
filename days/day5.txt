@@ -1,0 +1,252 @@
+==========================================================
+  DAY 5 - OOP Part 2: Inheritance + Polymorphism
+  Phase: Core Java | Week 1
+==========================================================
+
+TOPICS COVERED:
+  - extends keyword
+  - super keyword
+  - Method Overriding
+  - @Override annotation
+  - Runtime polymorphism
+  - IS-A relationship
+
+LEARNING OBJECTIVES:
+  - Build BaseTest class for test inheritance
+  - Override setup/teardown methods per test class
+  - Understand how POM uses inheritance
+
+----------------------------------------------------------
+EXAMPLE 1: BaseTest with Inheritance
+----------------------------------------------------------
+public class BaseTest {
+    protected String browser;
+    protected String url;
+
+    public BaseTest() {
+        this.browser = "chrome";
+        this.url = "https://www.saucedemo.com";
+    }
+
+    public void setUp() {
+        System.out.println("[SETUP] Launching " + browser);
+        System.out.println("[SETUP] Navigating to " + url);
+    }
+
+    public void tearDown() {
+        System.out.println("[TEARDOWN] Closing browser");
+        System.out.println("[TEARDOWN] Saving screenshot");
+    }
+
+    public void captureScreenshot(String testName) {
+        System.out.println("[SCREENSHOT] Captured: " + testName + ".png");
+    }
+}
+
+public class LoginTest extends BaseTest {
+    @Override
+    public void setUp() {
+        super.setUp();  // call parent setUp first
+        System.out.println("[LOGIN SETUP] Clearing cookies");
+        System.out.println("[LOGIN SETUP] Ready for login test");
+    }
+
+    public void testValidLogin() {
+        System.out.println("[TEST] Entering username: standard_user");
+        System.out.println("[TEST] Entering password: secret_sauce");
+        System.out.println("[TEST] Clicking login button");
+        System.out.println("[TEST] Verifying dashboard loaded");
+        System.out.println("[RESULT] PASS: Login successful");
+    }
+
+    @Override
+    public void tearDown() {
+        System.out.println("[LOGIN TEARDOWN] Logging out");
+        super.tearDown();  // call parent tearDown
+    }
+
+    public static void main(String[] args) {
+        LoginTest test = new LoginTest();
+        test.setUp();
+        test.testValidLogin();
+        test.tearDown();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Method Overriding with Polymorphism
+----------------------------------------------------------
+public class BasePage {
+    protected String pageName;
+
+    public BasePage(String pageName) {
+        this.pageName = pageName;
+    }
+
+    public boolean isLoaded() {
+        System.out.println("Checking if " + pageName + " is loaded...");
+        return true;
+    }
+
+    public void waitForLoad() {
+        System.out.println("Waiting for page: " + pageName);
+    }
+}
+
+public class LoginPage extends BasePage {
+    public LoginPage() {
+        super("Login Page");
+    }
+
+    @Override
+    public boolean isLoaded() {
+        super.isLoaded();
+        System.out.println("Checking login form visibility...");
+        boolean loginFormVisible = true;
+        System.out.println("Login form visible: " + loginFormVisible);
+        return loginFormVisible;
+    }
+
+    public void login(String username, String password) {
+        System.out.println("Typing username: " + username);
+        System.out.println("Typing password: " + password);
+        System.out.println("Clicking Login button");
+    }
+}
+
+public class DashboardPage extends BasePage {
+    public DashboardPage() {
+        super("Dashboard Page");
+    }
+
+    @Override
+    public boolean isLoaded() {
+        super.isLoaded();
+        System.out.println("Checking inventory list visibility...");
+        return true;
+    }
+
+    public int getProductCount() {
+        System.out.println("Counting products on dashboard...");
+        return 6;
+    }
+}
+
+// Polymorphism demo
+// BasePage page = new LoginPage();  -> Runtime decides which isLoaded() to call
+
+----------------------------------------------------------
+EXAMPLE 3: super keyword usage
+----------------------------------------------------------
+public class Animal {
+    String name;
+    Animal(String name) {
+        this.name = name;
+        System.out.println("Animal created: " + name);
+    }
+    void speak() {
+        System.out.println(name + " makes a sound");
+    }
+}
+
+// Mapping to test: BaseDriver -> ChromeDriver
+public class BaseDriver {
+    String browserName;
+    int timeout;
+
+    public BaseDriver(String browserName, int timeout) {
+        this.browserName = browserName;
+        this.timeout = timeout;
+        System.out.println("BaseDriver initialized: " + browserName);
+    }
+
+    public void launch() {
+        System.out.println("Launching: " + browserName);
+    }
+
+    public void quit() {
+        System.out.println("Quitting: " + browserName);
+    }
+}
+
+public class ChromeDriver extends BaseDriver {
+    boolean headless;
+
+    public ChromeDriver(boolean headless) {
+        super("Chrome", 30);  // calls parent constructor
+        this.headless = headless;
+        System.out.println("ChromeDriver options set. Headless: " + headless);
+    }
+
+    @Override
+    public void launch() {
+        super.launch();  // call parent launch
+        System.out.println("Setting Chrome options...");
+        System.out.println("Chrome launched" + (headless ? " in headless mode" : ""));
+    }
+
+    public static void main(String[] args) {
+        ChromeDriver driver = new ChromeDriver(false);
+        driver.launch();
+        driver.quit();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Multilevel Inheritance
+----------------------------------------------------------
+public class BaseTest2 {
+    public void setUp()    { System.out.println("[BASE] setUp"); }
+    public void tearDown() { System.out.println("[BASE] tearDown"); }
+    public void log(String msg) { System.out.println("[LOG] " + msg); }
+}
+
+public class SmokeTest extends BaseTest2 {
+    @Override
+    public void setUp() {
+        super.setUp();
+        System.out.println("[SMOKE] Smoke test setup");
+    }
+
+    public void runSmokeChecks() {
+        log("Running smoke checks...");
+        System.out.println("[SMOKE] Homepage loads");
+        System.out.println("[SMOKE] Login page accessible");
+    }
+}
+
+public class LoginSmokeTest extends SmokeTest {
+    @Override
+    public void setUp() {
+        super.setUp();
+        System.out.println("[LOGIN_SMOKE] Login smoke setup");
+    }
+
+    public void testLoginPageElements() {
+        log("Verifying login page elements");
+        System.out.println("[CHECK] Username field present");
+        System.out.println("[CHECK] Password field present");
+        System.out.println("[CHECK] Login button present");
+        System.out.println("[CHECK] Logo visible");
+    }
+
+    public static void main(String[] args) {
+        LoginSmokeTest test = new LoginSmokeTest();
+        test.setUp();
+        test.runSmokeChecks();
+        test.testLoginPageElements();
+        test.tearDown();
+    }
+}
+
+----------------------------------------------------------
+RESOURCES:
+  - https://www.javatpoint.com/inheritance-in-java
+  - https://www.w3schools.com/java/java_inheritance.asp
+
+PRACTICE TASKS:
+  1. Create BaseTest with browser, url, setUp(), tearDown()
+  2. Create CheckoutTest that extends BaseTest and overrides setUp()
+  3. Create a BasePage with isLoaded(), getTitle() methods
+  4. Create HomePage and CartPage extending BasePage
+==========================================================

@@ -1,0 +1,135 @@
+==========================================================
+  DAY 16 - Locators - ID/Name/Class/XPath/CSS
+  Phase: Selenium
+==========================================================
+
+OVERVIEW:
+  All 8 locator strategies, XPath absolute vs relative, CSS selectors, writing reliable locators
+
+TOPICS COVERED:
+    - All 8 locator strategies
+  - XPath absolute vs relative
+  - CSS selectors
+  - writing reliable locators
+
+LEARNING OBJECTIVES:
+  - Understand Locators - ID/Name/Class/XPath/CSS concepts thoroughly
+  - Apply Locators - ID/Name/Class/XPath/CSS in test automation scenarios
+  - Be able to explain Locators - ID/Name/Class/XPath/CSS in interviews
+  - Write production-quality code using Locators - ID/Name/Class/XPath/CSS
+
+
+----------------------------------------------------------
+EXAMPLE 1: Locators - ID/Name/Class/XPath/CSS - Fundamentals
+----------------------------------------------------------
+// Topic: Locators - ID/Name/Class/XPath/CSS
+// Phase: Selenium
+// Key concepts covered in this example:
+// All 8 locator strategies
+
+public class Day16Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 16: Locators - ID/Name/Class/XPath/CSS ===");
+        System.out.println("Phase: Selenium");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of Locators - ID/Name/Class/XPath/CSS
+        // Refer to the theory section above and implement:
+        // All 8 locator strategies
+
+        System.out.println("Day 16 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Locators - ID/Name/Class/XPath/CSS - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of Locators - ID/Name/Class/XPath/CSS
+// Key points: XPath absolute vs relative
+
+public class Day16Example2 {
+    // Define relevant fields and methods for Locators - ID/Name/Class/XPath/CSS
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: Locators - ID/Name/Class/XPath/CSS");
+        // Core implementation goes here
+        // Focus on: XPath absolute vs relative
+    }
+
+    public static void main(String[] args) {
+        Day16Example2 demo = new Day16Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Locators - ID/Name/Class/XPath/CSS - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying Locators - ID/Name/Class/XPath/CSS in test automation
+
+public class Day16Example3 {
+
+    // Scenario: Using Locators - ID/Name/Class/XPath/CSS in an automation framework
+    // This is how Locators - ID/Name/Class/XPath/CSS is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: Locators - ID/Name/Class/XPath/CSS");
+        // CSS selectors
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Locators - ID/Name/Class/XPath/CSS - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of Locators - ID/Name/Class/XPath/CSS with best practices
+
+public class Day16Example4 {
+
+    // Best practices for Locators - ID/Name/Class/XPath/CSS:
+    // 1. Always follow Locators - ID/Name/Class/XPath/CSS principles consistently
+    // 2. writing reliable locators
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced Locators - ID/Name/Class/XPath/CSS demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: Locators - ID/Name/Class/XPath/CSS");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 16 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 16 with previous days
+  3. Write 2 more examples of your own on Locators - ID/Name/Class/XPath/CSS
+  4. Push all code to GitHub with commit message: "Day 16: Locators - ID/Name/Class/XPath/CSS"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: locators)
+  - https://www.baeldung.com (search: locators)
+  - YouTube: Search "Locators - ID/Name/Class/XPath/CSS tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is Locators - ID/Name/Class/XPath/CSS and why is it important in test automation?
+  Q2: How have you used Locators - ID/Name/Class/XPath/CSS in your previous automation projects?
+  Q3: What are the best practices for Locators - ID/Name/Class/XPath/CSS?
+  Q4: How does Locators - ID/Name/Class/XPath/CSS compare with alternatives?
+
+END OF DAY 16
+Review, practice, and push to GitHub before sleeping!
+==========================================================

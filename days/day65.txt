@@ -1,0 +1,136 @@
+==========================================================
+  DAY 65 - JMeter Test Plan
+  Phase: Performance
+==========================================================
+
+OVERVIEW:
+  Assertions, timers, extractors, CSV data config, ramp-up strategies
+
+TOPICS COVERED:
+    - Assertions
+  - timers
+  - extractors
+  - CSV data config
+  - ramp-up strategies
+
+LEARNING OBJECTIVES:
+  - Understand JMeter Test Plan concepts thoroughly
+  - Apply JMeter Test Plan in test automation scenarios
+  - Be able to explain JMeter Test Plan in interviews
+  - Write production-quality code using JMeter Test Plan
+
+
+----------------------------------------------------------
+EXAMPLE 1: JMeter Test Plan - Fundamentals
+----------------------------------------------------------
+// Topic: JMeter Test Plan
+// Phase: Performance
+// Key concepts covered in this example:
+// Assertions
+
+public class Day65Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 65: JMeter Test Plan ===");
+        System.out.println("Phase: Performance");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of JMeter Test Plan
+        // Refer to the theory section above and implement:
+        // Assertions
+
+        System.out.println("Day 65 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: JMeter Test Plan - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of JMeter Test Plan
+// Key points: timers
+
+public class Day65Example2 {
+    // Define relevant fields and methods for JMeter Test Plan
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: JMeter Test Plan");
+        // Core implementation goes here
+        // Focus on: timers
+    }
+
+    public static void main(String[] args) {
+        Day65Example2 demo = new Day65Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: JMeter Test Plan - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying JMeter Test Plan in test automation
+
+public class Day65Example3 {
+
+    // Scenario: Using JMeter Test Plan in an automation framework
+    // This is how JMeter Test Plan is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: JMeter Test Plan");
+        // extractors
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: JMeter Test Plan - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of JMeter Test Plan with best practices
+
+public class Day65Example4 {
+
+    // Best practices for JMeter Test Plan:
+    // 1. Always follow JMeter Test Plan principles consistently
+    // 2. ramp-up strategies
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced JMeter Test Plan demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: JMeter Test Plan");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 65 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 65 with previous days
+  3. Write 2 more examples of your own on JMeter Test Plan
+  4. Push all code to GitHub with commit message: "Day 65: JMeter Test Plan"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: jmeter)
+  - https://www.baeldung.com (search: jmeter)
+  - YouTube: Search "JMeter Test Plan tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is JMeter Test Plan and why is it important in test automation?
+  Q2: How have you used JMeter Test Plan in your previous automation projects?
+  Q3: What are the best practices for JMeter Test Plan?
+  Q4: How does JMeter Test Plan compare with alternatives?
+
+END OF DAY 65
+Review, practice, and push to GitHub before sleeping!
+==========================================================

@@ -1,0 +1,176 @@
+==========================================================
+  DAY 3 - Arrays + Strings
+  Phase: Core Java | Week 1
+==========================================================
+
+TOPICS COVERED:
+  - String class and its methods
+  - String comparison
+  - StringBuilder
+  - Single and Multi-dimensional Arrays
+  - Array operations
+
+LEARNING OBJECTIVES:
+  - Manipulate test data strings
+  - Store and access collections of test data
+  - Compare expected vs actual values
+
+----------------------------------------------------------
+EXAMPLE 1: String Methods for Test Automation
+----------------------------------------------------------
+public class StringMethods {
+    public static void main(String[] args) {
+        String url = "  https://www.SauceDemo.com/login  ";
+        String title = "Welcome to Swag Labs";
+        String errorMsg = "Epic sadface: Username and password do not match";
+
+        // Trim whitespace
+        System.out.println("Trimmed: " + url.trim());
+
+        // Length
+        System.out.println("Length: " + title.length());
+
+        // Upper/Lower case
+        System.out.println("Upper: " + title.toUpperCase());
+        System.out.println("Lower: " + url.toLowerCase().trim());
+
+        // Contains / StartsWith / EndsWith
+        System.out.println("Has 'login': " + url.contains("login"));
+        System.out.println("Starts with 'Epic': " + errorMsg.startsWith("Epic"));
+        System.out.println("Ends with 'match': " + errorMsg.endsWith("match"));
+
+        // Replace
+        String newUrl = url.trim().replace("SauceDemo", "saucedemo");
+        System.out.println("Replaced: " + newUrl);
+
+        // Substring
+        System.out.println("Domain: " + url.trim().substring(8, 30));
+
+        // Split
+        String[] parts = errorMsg.split(":");
+        System.out.println("Part 0: " + parts[0]);
+        System.out.println("Part 1: " + parts[1].trim());
+
+        // indexOf
+        System.out.println("Index of 'Swag': " + title.indexOf("Swag"));
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: String Comparison (Common Mistake Area)
+----------------------------------------------------------
+public class StringComparison {
+    public static void main(String[] args) {
+        String expected = "Swag Labs";
+        String actual = new String("Swag Labs");
+
+        // WRONG way - compares memory references
+        if (expected == actual) {
+            System.out.println("== : Match (unreliable!)");
+        } else {
+            System.out.println("== : No match (memory diff)");
+        }
+
+        // CORRECT way - compares content
+        if (expected.equals(actual)) {
+            System.out.println("equals(): Match - CORRECT method");
+        }
+
+        // Case-insensitive comparison
+        String browser1 = "Chrome";
+        String browser2 = "chrome";
+        System.out.println("equalsIgnoreCase: " + browser1.equalsIgnoreCase(browser2));
+
+        // Compare with null safety
+        String nullStr = null;
+        System.out.println("Expected equals null: " + expected.equals(nullStr));
+
+        // Null-safe comparison (use Objects.equals)
+        System.out.println("Objects.equals: " + java.util.Objects.equals(expected, nullStr));
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Arrays for Test Data
+----------------------------------------------------------
+public class ArraysDemo {
+    public static void main(String[] args) {
+        // Single dimension
+        String[] browsers = {"chrome", "firefox", "edge", "safari"};
+        int[] statusCodes = {200, 201, 400, 404, 500};
+
+        System.out.println("First browser: " + browsers[0]);
+        System.out.println("Last browser: " + browsers[browsers.length - 1]);
+        System.out.println("Array length: " + browsers.length);
+
+        // Loop through array
+        System.out.println("\n--- All browsers ---");
+        for (String browser : browsers) {
+            System.out.println("Browser: " + browser);
+        }
+
+        // Check status codes
+        System.out.println("\n--- Status Code Analysis ---");
+        for (int code : statusCodes) {
+            if (code >= 200 && code < 300) {
+                System.out.println(code + " -> SUCCESS");
+            } else if (code >= 400 && code < 500) {
+                System.out.println(code + " -> CLIENT ERROR");
+            } else if (code >= 500) {
+                System.out.println(code + " -> SERVER ERROR");
+            }
+        }
+
+        // Sort array
+        java.util.Arrays.sort(browsers);
+        System.out.println("\n--- Sorted browsers ---");
+        for (String b : browsers) System.out.println(b);
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: StringBuilder for Dynamic Test Data
+----------------------------------------------------------
+public class StringBuilderDemo {
+    public static void main(String[] args) {
+        // Build test report dynamically
+        StringBuilder report = new StringBuilder();
+        report.append("=== Test Execution Report ===\n");
+        report.append("Date: 2026-05-25\n");
+        report.append("Environment: QA\n");
+        report.append("Browser: Chrome\n");
+        report.append("\n");
+
+        String[] tests = {"Login_Test", "Search_Test", "Checkout_Test", "Logout_Test"};
+        boolean[] results = {true, true, false, true};
+
+        int passed = 0, failed = 0;
+        for (int i = 0; i < tests.length; i++) {
+            String status = results[i] ? "PASS" : "FAIL";
+            report.append(tests[i]).append(": ").append(status).append("\n");
+            if (results[i]) passed++; else failed++;
+        }
+
+        report.append("\nTotal: ").append(tests.length);
+        report.append(" | Passed: ").append(passed);
+        report.append(" | Failed: ").append(failed);
+
+        System.out.println(report.toString());
+
+        // String.format for clean output
+        String summary = String.format("Pass Rate: %.1f%%", (passed * 100.0 / tests.length));
+        System.out.println(summary);
+    }
+}
+
+----------------------------------------------------------
+RESOURCES:
+  - https://www.javatpoint.com/java-string
+  - https://www.w3schools.com/java/java_arrays.asp
+
+PRACTICE TASKS:
+  1. Read a URL string and extract domain name using substring/split
+  2. Compare expected vs actual page titles using equals()
+  3. Store 5 test case names in array and print with index numbers
+  4. Build a dynamic test log string using StringBuilder
+==========================================================

@@ -1,0 +1,136 @@
+==========================================================
+  DAY 26 - ExtentReports
+  Phase: Selenium
+==========================================================
+
+OVERVIEW:
+  ExtentSparkReporter, createTest, pass/fail logging, screenshots in reports, TestListener
+
+TOPICS COVERED:
+    - ExtentSparkReporter
+  - createTest
+  - pass/fail logging
+  - screenshots in reports
+  - TestListener
+
+LEARNING OBJECTIVES:
+  - Understand ExtentReports concepts thoroughly
+  - Apply ExtentReports in test automation scenarios
+  - Be able to explain ExtentReports in interviews
+  - Write production-quality code using ExtentReports
+
+
+----------------------------------------------------------
+EXAMPLE 1: ExtentReports - Fundamentals
+----------------------------------------------------------
+// Topic: ExtentReports
+// Phase: Selenium
+// Key concepts covered in this example:
+// ExtentSparkReporter
+
+public class Day26Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 26: ExtentReports ===");
+        System.out.println("Phase: Selenium");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of ExtentReports
+        // Refer to the theory section above and implement:
+        // ExtentSparkReporter
+
+        System.out.println("Day 26 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: ExtentReports - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of ExtentReports
+// Key points: createTest
+
+public class Day26Example2 {
+    // Define relevant fields and methods for ExtentReports
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: ExtentReports");
+        // Core implementation goes here
+        // Focus on: createTest
+    }
+
+    public static void main(String[] args) {
+        Day26Example2 demo = new Day26Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: ExtentReports - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying ExtentReports in test automation
+
+public class Day26Example3 {
+
+    // Scenario: Using ExtentReports in an automation framework
+    // This is how ExtentReports is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: ExtentReports");
+        // pass/fail logging
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: ExtentReports - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of ExtentReports with best practices
+
+public class Day26Example4 {
+
+    // Best practices for ExtentReports:
+    // 1. Always follow ExtentReports principles consistently
+    // 2. TestListener
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced ExtentReports demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: ExtentReports");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 26 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 26 with previous days
+  3. Write 2 more examples of your own on ExtentReports
+  4. Push all code to GitHub with commit message: "Day 26: ExtentReports"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: extentreports)
+  - https://www.baeldung.com (search: extentreports)
+  - YouTube: Search "ExtentReports tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is ExtentReports and why is it important in test automation?
+  Q2: How have you used ExtentReports in your previous automation projects?
+  Q3: What are the best practices for ExtentReports?
+  Q4: How does ExtentReports compare with alternatives?
+
+END OF DAY 26
+Review, practice, and push to GitHub before sleeping!
+==========================================================

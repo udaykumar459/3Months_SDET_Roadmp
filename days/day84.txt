@@ -1,0 +1,136 @@
+==========================================================
+  DAY 84 - Interview Prep - Java
+  Phase: Interview
+==========================================================
+
+OVERVIEW:
+  Java OOP questions, collections, Java 8, exceptions, multithreading basics
+
+TOPICS COVERED:
+    - Java OOP questions
+  - collections
+  - Java 8
+  - exceptions
+  - multithreading basics
+
+LEARNING OBJECTIVES:
+  - Understand Interview Prep - Java concepts thoroughly
+  - Apply Interview Prep - Java in test automation scenarios
+  - Be able to explain Interview Prep - Java in interviews
+  - Write production-quality code using Interview Prep - Java
+
+
+----------------------------------------------------------
+EXAMPLE 1: Interview Prep - Java - Fundamentals
+----------------------------------------------------------
+// Topic: Interview Prep - Java
+// Phase: Interview
+// Key concepts covered in this example:
+// Java OOP questions
+
+public class Day84Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 84: Interview Prep - Java ===");
+        System.out.println("Phase: Interview");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of Interview Prep - Java
+        // Refer to the theory section above and implement:
+        // Java OOP questions
+
+        System.out.println("Day 84 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Interview Prep - Java - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of Interview Prep - Java
+// Key points: collections
+
+public class Day84Example2 {
+    // Define relevant fields and methods for Interview Prep - Java
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: Interview Prep - Java");
+        // Core implementation goes here
+        // Focus on: collections
+    }
+
+    public static void main(String[] args) {
+        Day84Example2 demo = new Day84Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Interview Prep - Java - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying Interview Prep - Java in test automation
+
+public class Day84Example3 {
+
+    // Scenario: Using Interview Prep - Java in an automation framework
+    // This is how Interview Prep - Java is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: Interview Prep - Java");
+        // Java 8
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Interview Prep - Java - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of Interview Prep - Java with best practices
+
+public class Day84Example4 {
+
+    // Best practices for Interview Prep - Java:
+    // 1. Always follow Interview Prep - Java principles consistently
+    // 2. multithreading basics
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced Interview Prep - Java demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: Interview Prep - Java");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 84 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 84 with previous days
+  3. Write 2 more examples of your own on Interview Prep - Java
+  4. Push all code to GitHub with commit message: "Day 84: Interview Prep - Java"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: interview)
+  - https://www.baeldung.com (search: interview)
+  - YouTube: Search "Interview Prep - Java tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is Interview Prep - Java and why is it important in test automation?
+  Q2: How have you used Interview Prep - Java in your previous automation projects?
+  Q3: What are the best practices for Interview Prep - Java?
+  Q4: How does Interview Prep - Java compare with alternatives?
+
+END OF DAY 84
+Review, practice, and push to GitHub before sleeping!
+==========================================================

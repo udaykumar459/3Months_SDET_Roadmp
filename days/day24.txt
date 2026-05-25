@@ -1,0 +1,134 @@
+==========================================================
+  DAY 24 - Alerts, Frames, Windows
+  Phase: Selenium
+==========================================================
+
+OVERVIEW:
+  Alert accept/dismiss/sendKeys, switchTo().frame(), multiple windows handling
+
+TOPICS COVERED:
+    - Alert accept/dismiss/sendKeys
+  - switchTo().frame()
+  - multiple windows handling
+
+LEARNING OBJECTIVES:
+  - Understand Alerts, Frames, Windows concepts thoroughly
+  - Apply Alerts, Frames, Windows in test automation scenarios
+  - Be able to explain Alerts, Frames, Windows in interviews
+  - Write production-quality code using Alerts, Frames, Windows
+
+
+----------------------------------------------------------
+EXAMPLE 1: Alerts, Frames, Windows - Fundamentals
+----------------------------------------------------------
+// Topic: Alerts, Frames, Windows
+// Phase: Selenium
+// Key concepts covered in this example:
+// Alert accept/dismiss/sendKeys
+
+public class Day24Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 24: Alerts, Frames, Windows ===");
+        System.out.println("Phase: Selenium");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of Alerts, Frames, Windows
+        // Refer to the theory section above and implement:
+        // Alert accept/dismiss/sendKeys
+
+        System.out.println("Day 24 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Alerts, Frames, Windows - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of Alerts, Frames, Windows
+// Key points: switchTo().frame()
+
+public class Day24Example2 {
+    // Define relevant fields and methods for Alerts, Frames, Windows
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: Alerts, Frames, Windows");
+        // Core implementation goes here
+        // Focus on: switchTo().frame()
+    }
+
+    public static void main(String[] args) {
+        Day24Example2 demo = new Day24Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Alerts, Frames, Windows - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying Alerts, Frames, Windows in test automation
+
+public class Day24Example3 {
+
+    // Scenario: Using Alerts, Frames, Windows in an automation framework
+    // This is how Alerts, Frames, Windows is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: Alerts, Frames, Windows");
+        // multiple windows handling
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Alerts, Frames, Windows - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of Alerts, Frames, Windows with best practices
+
+public class Day24Example4 {
+
+    // Best practices for Alerts, Frames, Windows:
+    // 1. Always follow Alerts, Frames, Windows principles consistently
+    // 2. multiple windows handling
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced Alerts, Frames, Windows demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: Alerts, Frames, Windows");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 24 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 24 with previous days
+  3. Write 2 more examples of your own on Alerts, Frames, Windows
+  4. Push all code to GitHub with commit message: "Day 24: Alerts, Frames, Windows"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: alerts,)
+  - https://www.baeldung.com (search: alerts,)
+  - YouTube: Search "Alerts, Frames, Windows tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is Alerts, Frames, Windows and why is it important in test automation?
+  Q2: How have you used Alerts, Frames, Windows in your previous automation projects?
+  Q3: What are the best practices for Alerts, Frames, Windows?
+  Q4: How does Alerts, Frames, Windows compare with alternatives?
+
+END OF DAY 24
+Review, practice, and push to GitHub before sleeping!
+==========================================================

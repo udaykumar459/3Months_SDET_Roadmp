@@ -1,0 +1,258 @@
+==========================================================
+  DAY 9 - File Handling + Properties Files
+  Phase: Core Java | Week 2
+==========================================================
+
+TOPICS COVERED:
+  - FileReader, FileWriter, BufferedReader, BufferedWriter
+  - Properties class for config files
+  - Reading CSV test data files
+  - Writing test results to files
+  - File and Path operations
+
+LEARNING OBJECTIVES:
+  - Read test configuration from .properties files
+  - Load test data from CSV files
+  - Write test results/logs to files
+
+----------------------------------------------------------
+EXAMPLE 1: Properties File for Test Config
+----------------------------------------------------------
+// config.properties (create this file):
+// browser=chrome
+// base.url=https://www.saucedemo.com
+// timeout=30
+// environment=QA
+// headless=false
+// screenshot.path=./screenshots
+
+import java.util.Properties;
+import java.io.*;
+
+public class ConfigReader {
+    private static ConfigReader instance;
+    private Properties properties;
+
+    private ConfigReader() {
+        properties = new Properties();
+        try {
+            InputStream input = new FileInputStream("src/test/resources/config.properties");
+            properties.load(input);
+            System.out.println("Config loaded successfully");
+        } catch (FileNotFoundException e) {
+            System.out.println("config.properties not found! Using defaults.");
+            setDefaults();
+        } catch (IOException e) {
+            throw new RuntimeException("Failed to load config: " + e.getMessage());
+        }
+    }
+
+    private void setDefaults() {
+        properties.setProperty("browser", "chrome");
+        properties.setProperty("base.url", "https://www.saucedemo.com");
+        properties.setProperty("timeout", "30");
+        properties.setProperty("environment", "QA");
+    }
+
+    public static ConfigReader getInstance() {
+        if (instance == null) instance = new ConfigReader();
+        return instance;
+    }
+
+    public String getBrowser()      { return properties.getProperty("browser", "chrome"); }
+    public String getBaseUrl()      { return properties.getProperty("base.url"); }
+    public int getTimeout()         { return Integer.parseInt(properties.getProperty("timeout", "30")); }
+    public String getEnvironment()  { return properties.getProperty("environment", "QA"); }
+    public boolean isHeadless()     { return Boolean.parseBoolean(properties.getProperty("headless", "false")); }
+    public String getScreenshotPath() { return properties.getProperty("screenshot.path", "./screenshots"); }
+
+    public static void main(String[] args) {
+        ConfigReader config = ConfigReader.getInstance();
+        System.out.println("Browser:     " + config.getBrowser());
+        System.out.println("URL:         " + config.getBaseUrl());
+        System.out.println("Timeout:     " + config.getTimeout() + "s");
+        System.out.println("Environment: " + config.getEnvironment());
+        System.out.println("Headless:    " + config.isHeadless());
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Reading CSV Test Data
+----------------------------------------------------------
+import java.io.*;
+import java.util.*;
+
+public class CsvDataReader {
+    // testdata.csv content:
+    // username,password,expectedResult
+    // standard_user,secret_sauce,success
+    // locked_out_user,secret_sauce,failure
+    // wrong_user,wrong_pass,failure
+
+    public static List<Map<String, String>> readCsv(String filePath) {
+        List<Map<String, String>> data = new ArrayList<>();
+
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+            String headerLine = reader.readLine();
+            if (headerLine == null) return data;
+
+            String[] headers = headerLine.split(",");
+            String line;
+            int rowNum = 0;
+
+            while ((line = reader.readLine()) != null) {
+                rowNum++;
+                String[] values = line.split(",");
+                Map<String, String> row = new LinkedHashMap<>();
+
+                for (int i = 0; i < headers.length; i++) {
+                    row.put(headers[i].trim(), i < values.length ? values[i].trim() : "");
+                }
+                data.add(row);
+                System.out.println("Row " + rowNum + ": " + row);
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("CSV file not found: " + filePath);
+        } catch (IOException e) {
+            System.out.println("Error reading CSV: " + e.getMessage());
+        }
+        return data;
+    }
+
+    public static void main(String[] args) {
+        List<Map<String, String>> testData = readCsv("testdata.csv");
+        System.out.println("\nTotal test rows: " + testData.size());
+
+        for (Map<String, String> row : testData) {
+            System.out.println("\nTest: " + row.get("username"));
+            System.out.println("  Password: " + row.get("password"));
+            System.out.println("  Expected: " + row.get("expectedResult"));
+        }
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Writing Test Reports to File
+----------------------------------------------------------
+import java.io.*;
+import java.time.*;
+import java.time.format.*;
+
+public class TestReportWriter {
+    private String reportPath;
+    private BufferedWriter writer;
+    private int passed = 0, failed = 0, skipped = 0;
+
+    public TestReportWriter(String reportPath) throws IOException {
+        this.reportPath = reportPath;
+        new File(reportPath).getParentFile().mkdirs();
+        writer = new BufferedWriter(new FileWriter(reportPath));
+        writeHeader();
+    }
+
+    private void writeHeader() throws IOException {
+        String timestamp = LocalDateTime.now()
+            .format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+        writer.write("========================================\n");
+        writer.write("  TEST EXECUTION REPORT\n");
+        writer.write("  Generated: " + timestamp + "\n");
+        writer.write("========================================\n");
+        writer.newLine();
+    }
+
+    public void writeTestResult(String testName, String status, long durationMs) throws IOException {
+        String line = String.format("%-50s [%s] %dms%n", testName, status, durationMs);
+        writer.write(line);
+        switch (status) {
+            case "PASS": passed++; break;
+            case "FAIL": failed++; break;
+            case "SKIP": skipped++; break;
+        }
+    }
+
+    public void writeSummary() throws IOException {
+        writer.newLine();
+        writer.write("========================================\n");
+        writer.write(String.format("  PASSED: %d | FAILED: %d | SKIPPED: %d%n", passed, failed, skipped));
+        int total = passed + failed + skipped;
+        double passRate = total > 0 ? (passed * 100.0 / total) : 0;
+        writer.write(String.format("  TOTAL: %d | PASS RATE: %.1f%%%n", total, passRate));
+        writer.write("========================================\n");
+    }
+
+    public void close() throws IOException {
+        writeSummary();
+        writer.close();
+        System.out.println("Report saved: " + reportPath);
+    }
+
+    public static void main(String[] args) throws IOException {
+        TestReportWriter report = new TestReportWriter("reports/test_results.txt");
+        report.writeTestResult("TC001_Login_Valid_User", "PASS", 1234);
+        report.writeTestResult("TC002_Login_Invalid_User", "FAIL", 890);
+        report.writeTestResult("TC003_Login_Locked_User", "PASS", 567);
+        report.writeTestResult("TC004_Add_To_Cart", "SKIP", 0);
+        report.close();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Multiple Properties Files (Environment-Based)
+----------------------------------------------------------
+import java.util.Properties;
+import java.io.*;
+
+public class EnvironmentConfig {
+    private Properties props = new Properties();
+    private String environment;
+
+    public EnvironmentConfig(String environment) {
+        this.environment = environment.toLowerCase();
+        loadConfig();
+    }
+
+    private void loadConfig() {
+        String[] filesToLoad = {"config.properties", environment + ".properties"};
+
+        for (String fileName : filesToLoad) {
+            String filePath = "src/test/resources/" + fileName;
+            try (InputStream is = new FileInputStream(filePath)) {
+                props.load(is);
+                System.out.println("Loaded: " + fileName);
+            } catch (FileNotFoundException e) {
+                System.out.println("File not found (skipping): " + fileName);
+            } catch (IOException e) {
+                System.out.println("Error loading " + fileName + ": " + e.getMessage());
+            }
+        }
+    }
+
+    public String get(String key) {
+        return props.getProperty(key, "NOT_CONFIGURED");
+    }
+
+    public void printAll() {
+        System.out.println("\n=== Config for: " + environment.toUpperCase() + " ===");
+        props.stringPropertyNames().stream()
+             .sorted()
+             .forEach(k -> System.out.println("  " + k + " = " + props.getProperty(k)));
+    }
+
+    public static void main(String[] args) {
+        EnvironmentConfig qaConfig = new EnvironmentConfig("QA");
+        qaConfig.printAll();
+        System.out.println("URL: " + qaConfig.get("base.url"));
+    }
+}
+
+----------------------------------------------------------
+RESOURCES:
+  - https://www.javatpoint.com/java-file-class
+  - https://www.baeldung.com/java-properties
+
+PRACTICE TASKS:
+  1. Create config.properties with browser, url, timeout, env values
+  2. Write ConfigReader that reads the file and has typed getters
+  3. Create testdata.csv with 5 login test rows and read them
+  4. Write a method that saves test results to a .txt file
+==========================================================

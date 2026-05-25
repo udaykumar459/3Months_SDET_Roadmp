@@ -1,0 +1,135 @@
+==========================================================
+  DAY 25 - Dropdowns, Tables, Checkboxes
+  Phase: Selenium
+==========================================================
+
+OVERVIEW:
+  Select class, table iteration, checkbox/radio handling, file upload
+
+TOPICS COVERED:
+    - Select class
+  - table iteration
+  - checkbox/radio handling
+  - file upload
+
+LEARNING OBJECTIVES:
+  - Understand Dropdowns, Tables, Checkboxes concepts thoroughly
+  - Apply Dropdowns, Tables, Checkboxes in test automation scenarios
+  - Be able to explain Dropdowns, Tables, Checkboxes in interviews
+  - Write production-quality code using Dropdowns, Tables, Checkboxes
+
+
+----------------------------------------------------------
+EXAMPLE 1: Dropdowns, Tables, Checkboxes - Fundamentals
+----------------------------------------------------------
+// Topic: Dropdowns, Tables, Checkboxes
+// Phase: Selenium
+// Key concepts covered in this example:
+// Select class
+
+public class Day25Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 25: Dropdowns, Tables, Checkboxes ===");
+        System.out.println("Phase: Selenium");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of Dropdowns, Tables, Checkboxes
+        // Refer to the theory section above and implement:
+        // Select class
+
+        System.out.println("Day 25 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Dropdowns, Tables, Checkboxes - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of Dropdowns, Tables, Checkboxes
+// Key points: table iteration
+
+public class Day25Example2 {
+    // Define relevant fields and methods for Dropdowns, Tables, Checkboxes
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: Dropdowns, Tables, Checkboxes");
+        // Core implementation goes here
+        // Focus on: table iteration
+    }
+
+    public static void main(String[] args) {
+        Day25Example2 demo = new Day25Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Dropdowns, Tables, Checkboxes - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying Dropdowns, Tables, Checkboxes in test automation
+
+public class Day25Example3 {
+
+    // Scenario: Using Dropdowns, Tables, Checkboxes in an automation framework
+    // This is how Dropdowns, Tables, Checkboxes is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: Dropdowns, Tables, Checkboxes");
+        // checkbox/radio handling
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Dropdowns, Tables, Checkboxes - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of Dropdowns, Tables, Checkboxes with best practices
+
+public class Day25Example4 {
+
+    // Best practices for Dropdowns, Tables, Checkboxes:
+    // 1. Always follow Dropdowns, Tables, Checkboxes principles consistently
+    // 2. file upload
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced Dropdowns, Tables, Checkboxes demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: Dropdowns, Tables, Checkboxes");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 25 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 25 with previous days
+  3. Write 2 more examples of your own on Dropdowns, Tables, Checkboxes
+  4. Push all code to GitHub with commit message: "Day 25: Dropdowns, Tables, Checkboxes"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: dropdowns,)
+  - https://www.baeldung.com (search: dropdowns,)
+  - YouTube: Search "Dropdowns, Tables, Checkboxes tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is Dropdowns, Tables, Checkboxes and why is it important in test automation?
+  Q2: How have you used Dropdowns, Tables, Checkboxes in your previous automation projects?
+  Q3: What are the best practices for Dropdowns, Tables, Checkboxes?
+  Q4: How does Dropdowns, Tables, Checkboxes compare with alternatives?
+
+END OF DAY 25
+Review, practice, and push to GitHub before sleeping!
+==========================================================

@@ -1,0 +1,134 @@
+==========================================================
+  DAY 44 - File Upload/Download
+  Phase: API Testing
+==========================================================
+
+OVERVIEW:
+  Multipart file upload, binary download, response stream handling
+
+TOPICS COVERED:
+    - Multipart file upload
+  - binary download
+  - response stream handling
+
+LEARNING OBJECTIVES:
+  - Understand File Upload/Download concepts thoroughly
+  - Apply File Upload/Download in test automation scenarios
+  - Be able to explain File Upload/Download in interviews
+  - Write production-quality code using File Upload/Download
+
+
+----------------------------------------------------------
+EXAMPLE 1: File Upload/Download - Fundamentals
+----------------------------------------------------------
+// Topic: File Upload/Download
+// Phase: API Testing
+// Key concepts covered in this example:
+// Multipart file upload
+
+public class Day44Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 44: File Upload/Download ===");
+        System.out.println("Phase: API Testing");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of File Upload/Download
+        // Refer to the theory section above and implement:
+        // Multipart file upload
+
+        System.out.println("Day 44 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: File Upload/Download - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of File Upload/Download
+// Key points: binary download
+
+public class Day44Example2 {
+    // Define relevant fields and methods for File Upload/Download
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: File Upload/Download");
+        // Core implementation goes here
+        // Focus on: binary download
+    }
+
+    public static void main(String[] args) {
+        Day44Example2 demo = new Day44Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: File Upload/Download - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying File Upload/Download in test automation
+
+public class Day44Example3 {
+
+    // Scenario: Using File Upload/Download in an automation framework
+    // This is how File Upload/Download is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: File Upload/Download");
+        // response stream handling
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: File Upload/Download - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of File Upload/Download with best practices
+
+public class Day44Example4 {
+
+    // Best practices for File Upload/Download:
+    // 1. Always follow File Upload/Download principles consistently
+    // 2. response stream handling
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced File Upload/Download demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: File Upload/Download");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 44 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 44 with previous days
+  3. Write 2 more examples of your own on File Upload/Download
+  4. Push all code to GitHub with commit message: "Day 44: File Upload/Download"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: file)
+  - https://www.baeldung.com (search: file)
+  - YouTube: Search "File Upload/Download tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is File Upload/Download and why is it important in test automation?
+  Q2: How have you used File Upload/Download in your previous automation projects?
+  Q3: What are the best practices for File Upload/Download?
+  Q4: How does File Upload/Download compare with alternatives?
+
+END OF DAY 44
+Review, practice, and push to GitHub before sleeping!
+==========================================================

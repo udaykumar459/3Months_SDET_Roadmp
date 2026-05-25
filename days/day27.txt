@@ -1,0 +1,135 @@
+==========================================================
+  DAY 27 - Allure Reports
+  Phase: Selenium
+==========================================================
+
+OVERVIEW:
+  @Epic/@Feature/@Story/@Step, severity levels, attachments, allure serve command
+
+TOPICS COVERED:
+    - @Epic/@Feature/@Story/@Step
+  - severity levels
+  - attachments
+  - allure serve command
+
+LEARNING OBJECTIVES:
+  - Understand Allure Reports concepts thoroughly
+  - Apply Allure Reports in test automation scenarios
+  - Be able to explain Allure Reports in interviews
+  - Write production-quality code using Allure Reports
+
+
+----------------------------------------------------------
+EXAMPLE 1: Allure Reports - Fundamentals
+----------------------------------------------------------
+// Topic: Allure Reports
+// Phase: Selenium
+// Key concepts covered in this example:
+// @Epic/@Feature/@Story/@Step
+
+public class Day27Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 27: Allure Reports ===");
+        System.out.println("Phase: Selenium");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of Allure Reports
+        // Refer to the theory section above and implement:
+        // @Epic/@Feature/@Story/@Step
+
+        System.out.println("Day 27 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Allure Reports - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of Allure Reports
+// Key points: severity levels
+
+public class Day27Example2 {
+    // Define relevant fields and methods for Allure Reports
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: Allure Reports");
+        // Core implementation goes here
+        // Focus on: severity levels
+    }
+
+    public static void main(String[] args) {
+        Day27Example2 demo = new Day27Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Allure Reports - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying Allure Reports in test automation
+
+public class Day27Example3 {
+
+    // Scenario: Using Allure Reports in an automation framework
+    // This is how Allure Reports is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: Allure Reports");
+        // attachments
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Allure Reports - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of Allure Reports with best practices
+
+public class Day27Example4 {
+
+    // Best practices for Allure Reports:
+    // 1. Always follow Allure Reports principles consistently
+    // 2. allure serve command
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced Allure Reports demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: Allure Reports");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 27 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 27 with previous days
+  3. Write 2 more examples of your own on Allure Reports
+  4. Push all code to GitHub with commit message: "Day 27: Allure Reports"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: allure)
+  - https://www.baeldung.com (search: allure)
+  - YouTube: Search "Allure Reports tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is Allure Reports and why is it important in test automation?
+  Q2: How have you used Allure Reports in your previous automation projects?
+  Q3: What are the best practices for Allure Reports?
+  Q4: How does Allure Reports compare with alternatives?
+
+END OF DAY 27
+Review, practice, and push to GitHub before sleeping!
+==========================================================

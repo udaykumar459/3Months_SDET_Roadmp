@@ -1,0 +1,135 @@
+==========================================================
+  DAY 74 - Testcontainers
+  Phase: Advanced
+==========================================================
+
+OVERVIEW:
+  MySQLContainer, PostgreSQLContainer, custom containers, lifecycle management
+
+TOPICS COVERED:
+    - MySQLContainer
+  - PostgreSQLContainer
+  - custom containers
+  - lifecycle management
+
+LEARNING OBJECTIVES:
+  - Understand Testcontainers concepts thoroughly
+  - Apply Testcontainers in test automation scenarios
+  - Be able to explain Testcontainers in interviews
+  - Write production-quality code using Testcontainers
+
+
+----------------------------------------------------------
+EXAMPLE 1: Testcontainers - Fundamentals
+----------------------------------------------------------
+// Topic: Testcontainers
+// Phase: Advanced
+// Key concepts covered in this example:
+// MySQLContainer
+
+public class Day74Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 74: Testcontainers ===");
+        System.out.println("Phase: Advanced");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of Testcontainers
+        // Refer to the theory section above and implement:
+        // MySQLContainer
+
+        System.out.println("Day 74 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Testcontainers - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of Testcontainers
+// Key points: PostgreSQLContainer
+
+public class Day74Example2 {
+    // Define relevant fields and methods for Testcontainers
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: Testcontainers");
+        // Core implementation goes here
+        // Focus on: PostgreSQLContainer
+    }
+
+    public static void main(String[] args) {
+        Day74Example2 demo = new Day74Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Testcontainers - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying Testcontainers in test automation
+
+public class Day74Example3 {
+
+    // Scenario: Using Testcontainers in an automation framework
+    // This is how Testcontainers is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: Testcontainers");
+        // custom containers
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Testcontainers - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of Testcontainers with best practices
+
+public class Day74Example4 {
+
+    // Best practices for Testcontainers:
+    // 1. Always follow Testcontainers principles consistently
+    // 2. lifecycle management
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced Testcontainers demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: Testcontainers");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 74 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 74 with previous days
+  3. Write 2 more examples of your own on Testcontainers
+  4. Push all code to GitHub with commit message: "Day 74: Testcontainers"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: testcontainers)
+  - https://www.baeldung.com (search: testcontainers)
+  - YouTube: Search "Testcontainers tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is Testcontainers and why is it important in test automation?
+  Q2: How have you used Testcontainers in your previous automation projects?
+  Q3: What are the best practices for Testcontainers?
+  Q4: How does Testcontainers compare with alternatives?
+
+END OF DAY 74
+Review, practice, and push to GitHub before sleeping!
+==========================================================

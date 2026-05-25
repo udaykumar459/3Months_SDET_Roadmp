@@ -1,0 +1,136 @@
+==========================================================
+  DAY 20 - TestNG Framework
+  Phase: Selenium
+==========================================================
+
+OVERVIEW:
+  Annotations @Test/@Before/@After, priority, groups, Assert class, testng.xml configuration
+
+TOPICS COVERED:
+    - Annotations @Test/@Before/@After
+  - priority
+  - groups
+  - Assert class
+  - testng.xml configuration
+
+LEARNING OBJECTIVES:
+  - Understand TestNG Framework concepts thoroughly
+  - Apply TestNG Framework in test automation scenarios
+  - Be able to explain TestNG Framework in interviews
+  - Write production-quality code using TestNG Framework
+
+
+----------------------------------------------------------
+EXAMPLE 1: TestNG Framework - Fundamentals
+----------------------------------------------------------
+// Topic: TestNG Framework
+// Phase: Selenium
+// Key concepts covered in this example:
+// Annotations @Test/@Before/@After
+
+public class Day20Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 20: TestNG Framework ===");
+        System.out.println("Phase: Selenium");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of TestNG Framework
+        // Refer to the theory section above and implement:
+        // Annotations @Test/@Before/@After
+
+        System.out.println("Day 20 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: TestNG Framework - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of TestNG Framework
+// Key points: priority
+
+public class Day20Example2 {
+    // Define relevant fields and methods for TestNG Framework
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: TestNG Framework");
+        // Core implementation goes here
+        // Focus on: priority
+    }
+
+    public static void main(String[] args) {
+        Day20Example2 demo = new Day20Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: TestNG Framework - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying TestNG Framework in test automation
+
+public class Day20Example3 {
+
+    // Scenario: Using TestNG Framework in an automation framework
+    // This is how TestNG Framework is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: TestNG Framework");
+        // groups
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: TestNG Framework - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of TestNG Framework with best practices
+
+public class Day20Example4 {
+
+    // Best practices for TestNG Framework:
+    // 1. Always follow TestNG Framework principles consistently
+    // 2. testng.xml configuration
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced TestNG Framework demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: TestNG Framework");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 20 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 20 with previous days
+  3. Write 2 more examples of your own on TestNG Framework
+  4. Push all code to GitHub with commit message: "Day 20: TestNG Framework"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: testng)
+  - https://www.baeldung.com (search: testng)
+  - YouTube: Search "TestNG Framework tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is TestNG Framework and why is it important in test automation?
+  Q2: How have you used TestNG Framework in your previous automation projects?
+  Q3: What are the best practices for TestNG Framework?
+  Q4: How does TestNG Framework compare with alternatives?
+
+END OF DAY 20
+Review, practice, and push to GitHub before sleeping!
+==========================================================

@@ -1,0 +1,134 @@
+==========================================================
+  DAY 32 - Framework Building Part 2
+  Phase: Selenium
+==========================================================
+
+OVERVIEW:
+  BasePage with all helper methods, LoginPage, DashboardPage with PageFactory
+
+TOPICS COVERED:
+    - BasePage with all helper methods
+  - LoginPage
+  - DashboardPage with PageFactory
+
+LEARNING OBJECTIVES:
+  - Understand Framework Building Part 2 concepts thoroughly
+  - Apply Framework Building Part 2 in test automation scenarios
+  - Be able to explain Framework Building Part 2 in interviews
+  - Write production-quality code using Framework Building Part 2
+
+
+----------------------------------------------------------
+EXAMPLE 1: Framework Building Part 2 - Fundamentals
+----------------------------------------------------------
+// Topic: Framework Building Part 2
+// Phase: Selenium
+// Key concepts covered in this example:
+// BasePage with all helper methods
+
+public class Day32Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 32: Framework Building Part 2 ===");
+        System.out.println("Phase: Selenium");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of Framework Building Part 2
+        // Refer to the theory section above and implement:
+        // BasePage with all helper methods
+
+        System.out.println("Day 32 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Framework Building Part 2 - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of Framework Building Part 2
+// Key points: LoginPage
+
+public class Day32Example2 {
+    // Define relevant fields and methods for Framework Building Part 2
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: Framework Building Part 2");
+        // Core implementation goes here
+        // Focus on: LoginPage
+    }
+
+    public static void main(String[] args) {
+        Day32Example2 demo = new Day32Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Framework Building Part 2 - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying Framework Building Part 2 in test automation
+
+public class Day32Example3 {
+
+    // Scenario: Using Framework Building Part 2 in an automation framework
+    // This is how Framework Building Part 2 is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: Framework Building Part 2");
+        // DashboardPage with PageFactory
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Framework Building Part 2 - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of Framework Building Part 2 with best practices
+
+public class Day32Example4 {
+
+    // Best practices for Framework Building Part 2:
+    // 1. Always follow Framework Building Part 2 principles consistently
+    // 2. DashboardPage with PageFactory
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced Framework Building Part 2 demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: Framework Building Part 2");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 32 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 32 with previous days
+  3. Write 2 more examples of your own on Framework Building Part 2
+  4. Push all code to GitHub with commit message: "Day 32: Framework Building Part 2"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: framework)
+  - https://www.baeldung.com (search: framework)
+  - YouTube: Search "Framework Building Part 2 tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is Framework Building Part 2 and why is it important in test automation?
+  Q2: How have you used Framework Building Part 2 in your previous automation projects?
+  Q3: What are the best practices for Framework Building Part 2?
+  Q4: How does Framework Building Part 2 compare with alternatives?
+
+END OF DAY 32
+Review, practice, and push to GitHub before sleeping!
+==========================================================

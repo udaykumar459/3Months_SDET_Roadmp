@@ -1,0 +1,105 @@
+==========================================================
+  DAY 1 - Java Setup + Basics
+  Phase: Core Java | Week 1
+==========================================================
+
+TOPICS COVERED:
+  - JDK Installation & IDE Setup (IntelliJ / Eclipse)
+  - Variables and Data Types
+  - Naming Conventions
+  - System.out.println
+  - Comments
+
+LEARNING OBJECTIVES:
+  - Understand Java environment setup
+  - Know all primitive data types
+  - Write your first Java program
+
+----------------------------------------------------------
+EXAMPLE 1: Hello World
+----------------------------------------------------------
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, SDET World!");
+        System.out.print("Learning Java for Automation");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Primitive Data Types
+----------------------------------------------------------
+public class DataTypes {
+    public static void main(String[] args) {
+        int age = 30;
+        long bigNumber = 9876543210L;
+        double salary = 24.5;
+        float percentage = 95.5f;
+        boolean isActive = true;
+        char grade = 'A';
+        byte byteVal = 127;
+        short shortVal = 32000;
+
+        System.out.println("Age: " + age);
+        System.out.println("Salary: " + salary);
+        System.out.println("Active: " + isActive);
+        System.out.println("Grade: " + grade);
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: String Variables (Non-primitive)
+----------------------------------------------------------
+public class StringDemo {
+    public static void main(String[] args) {
+        String name = "SDET Engineer";
+        String browser = "Chrome";
+        String url = "https://www.google.com";
+        String testCase = "TC_001_Login_Test";
+
+        System.out.println("Tester: " + name);
+        System.out.println("Browser: " + browser);
+        System.out.println("URL: " + url);
+        System.out.println("Test: " + testCase);
+
+        // String concatenation
+        String message = "Running " + testCase + " on " + browser;
+        System.out.println(message);
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Type Casting
+----------------------------------------------------------
+public class TypeCasting {
+    public static void main(String[] args) {
+        // Widening (automatic)
+        int intVal = 100;
+        long longVal = intVal;
+        double doubleVal = intVal;
+        System.out.println("Int to Long: " + longVal);
+        System.out.println("Int to Double: " + doubleVal);
+
+        // Narrowing (manual)
+        double price = 99.99;
+        int roundedPrice = (int) price;
+        System.out.println("Double to Int: " + roundedPrice);
+
+        // String to Int (common in test data reading)
+        String timeout = "30";
+        int timeoutInt = Integer.parseInt(timeout);
+        System.out.println("Timeout: " + timeoutInt + " seconds");
+    }
+}
+
+----------------------------------------------------------
+RESOURCES:
+  - https://www.javatpoint.com/java-tutorial
+  - YouTube: Telusko Java Tutorial Playlist
+  - https://www.w3schools.com/java/java_variables.asp
+
+PRACTICE TASKS:
+  1. Install JDK 17 and IntelliJ IDEA Community Edition
+  2. Create a project and run all 4 examples above
+  3. Create variables for: browserName, testURL, username, password, timeout
+  4. Print all variables with proper labels
+==========================================================

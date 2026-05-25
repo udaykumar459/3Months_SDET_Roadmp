@@ -1,0 +1,136 @@
+==========================================================
+  DAY 13 - Maven Build Tool
+  Phase: Core Java
+==========================================================
+
+OVERVIEW:
+  pom.xml structure, dependency management, plugins, lifecycle phases, running tests with Maven
+
+TOPICS COVERED:
+    - pom.xml structure
+  - dependency management
+  - plugins
+  - lifecycle phases
+  - running tests with Maven
+
+LEARNING OBJECTIVES:
+  - Understand Maven Build Tool concepts thoroughly
+  - Apply Maven Build Tool in test automation scenarios
+  - Be able to explain Maven Build Tool in interviews
+  - Write production-quality code using Maven Build Tool
+
+
+----------------------------------------------------------
+EXAMPLE 1: Maven Build Tool - Fundamentals
+----------------------------------------------------------
+// Topic: Maven Build Tool
+// Phase: Core Java
+// Key concepts covered in this example:
+// pom.xml structure
+
+public class Day13Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 13: Maven Build Tool ===");
+        System.out.println("Phase: Core Java");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of Maven Build Tool
+        // Refer to the theory section above and implement:
+        // pom.xml structure
+
+        System.out.println("Day 13 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Maven Build Tool - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of Maven Build Tool
+// Key points: dependency management
+
+public class Day13Example2 {
+    // Define relevant fields and methods for Maven Build Tool
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: Maven Build Tool");
+        // Core implementation goes here
+        // Focus on: dependency management
+    }
+
+    public static void main(String[] args) {
+        Day13Example2 demo = new Day13Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Maven Build Tool - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying Maven Build Tool in test automation
+
+public class Day13Example3 {
+
+    // Scenario: Using Maven Build Tool in an automation framework
+    // This is how Maven Build Tool is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: Maven Build Tool");
+        // plugins
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Maven Build Tool - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of Maven Build Tool with best practices
+
+public class Day13Example4 {
+
+    // Best practices for Maven Build Tool:
+    // 1. Always follow Maven Build Tool principles consistently
+    // 2. running tests with Maven
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced Maven Build Tool demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: Maven Build Tool");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 13 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 13 with previous days
+  3. Write 2 more examples of your own on Maven Build Tool
+  4. Push all code to GitHub with commit message: "Day 13: Maven Build Tool"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: maven)
+  - https://www.baeldung.com (search: maven)
+  - YouTube: Search "Maven Build Tool tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is Maven Build Tool and why is it important in test automation?
+  Q2: How have you used Maven Build Tool in your previous automation projects?
+  Q3: What are the best practices for Maven Build Tool?
+  Q4: How does Maven Build Tool compare with alternatives?
+
+END OF DAY 13
+Review, practice, and push to GitHub before sleeping!
+==========================================================

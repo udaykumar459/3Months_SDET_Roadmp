@@ -1,0 +1,134 @@
+==========================================================
+  DAY 35 - Framework Review + CI Integration
+  Phase: Selenium
+==========================================================
+
+OVERVIEW:
+  testng.xml groups (smoke/regression), Maven Surefire config, running from command line
+
+TOPICS COVERED:
+    - testng.xml groups (smoke/regression)
+  - Maven Surefire config
+  - running from command line
+
+LEARNING OBJECTIVES:
+  - Understand Framework Review + CI Integration concepts thoroughly
+  - Apply Framework Review + CI Integration in test automation scenarios
+  - Be able to explain Framework Review + CI Integration in interviews
+  - Write production-quality code using Framework Review + CI Integration
+
+
+----------------------------------------------------------
+EXAMPLE 1: Framework Review + CI Integration - Fundamentals
+----------------------------------------------------------
+// Topic: Framework Review + CI Integration
+// Phase: Selenium
+// Key concepts covered in this example:
+// testng.xml groups (smoke/regression)
+
+public class Day35Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 35: Framework Review + CI Integration ===");
+        System.out.println("Phase: Selenium");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of Framework Review + CI Integration
+        // Refer to the theory section above and implement:
+        // testng.xml groups (smoke/regression)
+
+        System.out.println("Day 35 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Framework Review + CI Integration - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of Framework Review + CI Integration
+// Key points: Maven Surefire config
+
+public class Day35Example2 {
+    // Define relevant fields and methods for Framework Review + CI Integration
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: Framework Review + CI Integration");
+        // Core implementation goes here
+        // Focus on: Maven Surefire config
+    }
+
+    public static void main(String[] args) {
+        Day35Example2 demo = new Day35Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Framework Review + CI Integration - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying Framework Review + CI Integration in test automation
+
+public class Day35Example3 {
+
+    // Scenario: Using Framework Review + CI Integration in an automation framework
+    // This is how Framework Review + CI Integration is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: Framework Review + CI Integration");
+        // running from command line
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Framework Review + CI Integration - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of Framework Review + CI Integration with best practices
+
+public class Day35Example4 {
+
+    // Best practices for Framework Review + CI Integration:
+    // 1. Always follow Framework Review + CI Integration principles consistently
+    // 2. running from command line
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced Framework Review + CI Integration demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: Framework Review + CI Integration");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 35 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 35 with previous days
+  3. Write 2 more examples of your own on Framework Review + CI Integration
+  4. Push all code to GitHub with commit message: "Day 35: Framework Review + CI Integration"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: framework)
+  - https://www.baeldung.com (search: framework)
+  - YouTube: Search "Framework Review + CI Integration tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is Framework Review + CI Integration and why is it important in test automation?
+  Q2: How have you used Framework Review + CI Integration in your previous automation projects?
+  Q3: What are the best practices for Framework Review + CI Integration?
+  Q4: How does Framework Review + CI Integration compare with alternatives?
+
+END OF DAY 35
+Review, practice, and push to GitHub before sleeping!
+==========================================================

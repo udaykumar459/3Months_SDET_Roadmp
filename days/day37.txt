@@ -1,0 +1,135 @@
+==========================================================
+  DAY 37 - RestAssured Setup + GET Request
+  Phase: API Testing
+==========================================================
+
+OVERVIEW:
+  BDD syntax given/when/then, baseURI setup, GET requests, Hamcrest matchers
+
+TOPICS COVERED:
+    - BDD syntax given/when/then
+  - baseURI setup
+  - GET requests
+  - Hamcrest matchers
+
+LEARNING OBJECTIVES:
+  - Understand RestAssured Setup + GET Request concepts thoroughly
+  - Apply RestAssured Setup + GET Request in test automation scenarios
+  - Be able to explain RestAssured Setup + GET Request in interviews
+  - Write production-quality code using RestAssured Setup + GET Request
+
+
+----------------------------------------------------------
+EXAMPLE 1: RestAssured Setup + GET Request - Fundamentals
+----------------------------------------------------------
+// Topic: RestAssured Setup + GET Request
+// Phase: API Testing
+// Key concepts covered in this example:
+// BDD syntax given/when/then
+
+public class Day37Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 37: RestAssured Setup + GET Request ===");
+        System.out.println("Phase: API Testing");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of RestAssured Setup + GET Request
+        // Refer to the theory section above and implement:
+        // BDD syntax given/when/then
+
+        System.out.println("Day 37 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: RestAssured Setup + GET Request - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of RestAssured Setup + GET Request
+// Key points: baseURI setup
+
+public class Day37Example2 {
+    // Define relevant fields and methods for RestAssured Setup + GET Request
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: RestAssured Setup + GET Request");
+        // Core implementation goes here
+        // Focus on: baseURI setup
+    }
+
+    public static void main(String[] args) {
+        Day37Example2 demo = new Day37Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: RestAssured Setup + GET Request - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying RestAssured Setup + GET Request in test automation
+
+public class Day37Example3 {
+
+    // Scenario: Using RestAssured Setup + GET Request in an automation framework
+    // This is how RestAssured Setup + GET Request is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: RestAssured Setup + GET Request");
+        // GET requests
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: RestAssured Setup + GET Request - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of RestAssured Setup + GET Request with best practices
+
+public class Day37Example4 {
+
+    // Best practices for RestAssured Setup + GET Request:
+    // 1. Always follow RestAssured Setup + GET Request principles consistently
+    // 2. Hamcrest matchers
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced RestAssured Setup + GET Request demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: RestAssured Setup + GET Request");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 37 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 37 with previous days
+  3. Write 2 more examples of your own on RestAssured Setup + GET Request
+  4. Push all code to GitHub with commit message: "Day 37: RestAssured Setup + GET Request"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: restassured)
+  - https://www.baeldung.com (search: restassured)
+  - YouTube: Search "RestAssured Setup + GET Request tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is RestAssured Setup + GET Request and why is it important in test automation?
+  Q2: How have you used RestAssured Setup + GET Request in your previous automation projects?
+  Q3: What are the best practices for RestAssured Setup + GET Request?
+  Q4: How does RestAssured Setup + GET Request compare with alternatives?
+
+END OF DAY 37
+Review, practice, and push to GitHub before sleeping!
+==========================================================

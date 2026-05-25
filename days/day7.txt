@@ -1,0 +1,206 @@
+==========================================================
+  DAY 7 - Collections: List, Set, Map
+  Phase: Core Java | Week 1
+==========================================================
+
+TOPICS COVERED:
+  - ArrayList, LinkedList
+  - HashSet, LinkedHashSet, TreeSet
+  - HashMap, LinkedHashMap, TreeMap
+  - Iterating collections
+  - Collections utility methods
+
+LEARNING OBJECTIVES:
+  - Store test data efficiently
+  - Use appropriate collection for each use case
+  - Manipulate test datasets
+
+----------------------------------------------------------
+EXAMPLE 1: List - Ordered Test Data
+----------------------------------------------------------
+import java.util.*;
+
+public class ListDemo {
+    public static void main(String[] args) {
+        // ArrayList - ordered, allows duplicates, fast read
+        List<String> testSteps = new ArrayList<>();
+        testSteps.add("Open browser");
+        testSteps.add("Navigate to login page");
+        testSteps.add("Enter username");
+        testSteps.add("Enter password");
+        testSteps.add("Click login button");
+        testSteps.add("Verify dashboard loaded");
+
+        System.out.println("Total steps: " + testSteps.size());
+        System.out.println("Step 1: " + testSteps.get(0));
+        System.out.println("Last step: " + testSteps.get(testSteps.size() - 1));
+
+        // Iterate
+        System.out.println("\n--- Test Steps ---");
+        for (int i = 0; i < testSteps.size(); i++) {
+            System.out.printf("Step %d: %s%n", i + 1, testSteps.get(i));
+        }
+
+        // Check if step exists
+        System.out.println("\nHas 'Enter username': " + testSteps.contains("Enter username"));
+
+        // Remove a step
+        testSteps.remove("Click login button");
+        System.out.println("After removal: " + testSteps.size() + " steps");
+
+        // Add at specific position
+        testSteps.add(4, "Click Login button");
+
+        // subList
+        List<String> credentialSteps = testSteps.subList(2, 4);
+        System.out.println("\nCredential steps: " + credentialSteps);
+
+        // Sort
+        List<String> browsers = new ArrayList<>(Arrays.asList("firefox", "chrome", "edge", "safari"));
+        Collections.sort(browsers);
+        System.out.println("Sorted: " + browsers);
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Set - Unique Test Data
+----------------------------------------------------------
+import java.util.*;
+
+public class SetDemo {
+    public static void main(String[] args) {
+        // HashSet - no duplicates, no order
+        Set<String> executedTests = new HashSet<>();
+        executedTests.add("TC001_Login");
+        executedTests.add("TC002_Search");
+        executedTests.add("TC001_Login");  // duplicate - ignored!
+        executedTests.add("TC003_Checkout");
+
+        System.out.println("Unique tests run: " + executedTests.size());
+        System.out.println("Tests: " + executedTests);
+        System.out.println("Contains TC002: " + executedTests.contains("TC002_Search"));
+
+        // LinkedHashSet - no duplicates, maintains insertion order
+        Set<String> orderedBrowsers = new LinkedHashSet<>();
+        orderedBrowsers.add("chrome");
+        orderedBrowsers.add("firefox");
+        orderedBrowsers.add("chrome");  // ignored
+        orderedBrowsers.add("edge");
+        System.out.println("Ordered unique browsers: " + orderedBrowsers);
+
+        // TreeSet - sorted, no duplicates
+        Set<Integer> statusCodes = new TreeSet<>();
+        statusCodes.add(404);
+        statusCodes.add(200);
+        statusCodes.add(500);
+        statusCodes.add(201);
+        statusCodes.add(200);  // ignored
+        System.out.println("Sorted status codes: " + statusCodes);
+
+        // Set operations - find common failed tests
+        Set<String> failedOnChrome  = new HashSet<>(Arrays.asList("TC001", "TC003", "TC005"));
+        Set<String> failedOnFirefox = new HashSet<>(Arrays.asList("TC002", "TC003", "TC006"));
+        Set<String> commonFails = new HashSet<>(failedOnChrome);
+        commonFails.retainAll(failedOnFirefox);
+        System.out.println("Failed on both browsers: " + commonFails);
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Map - Key-Value Test Data
+----------------------------------------------------------
+import java.util.*;
+
+public class MapDemo {
+    public static void main(String[] args) {
+        // HashMap - test data as key-value
+        Map<String, String> testData = new HashMap<>();
+        testData.put("username", "standard_user");
+        testData.put("password", "secret_sauce");
+        testData.put("expectedUrl", "https://www.saucedemo.com/inventory.html");
+        testData.put("expectedTitle", "Swag Labs");
+
+        System.out.println("Username: " + testData.get("username"));
+        System.out.println("Keys: " + testData.keySet());
+        System.out.println("Values: " + testData.values());
+        System.out.println("Has 'email': " + testData.containsKey("email"));
+        System.out.println("Size: " + testData.size());
+
+        // Iterate map
+        System.out.println("\n--- Test Data ---");
+        for (Map.Entry<String, String> entry : testData.entrySet()) {
+            System.out.println(entry.getKey() + " = " + entry.getValue());
+        }
+
+        // Environment URLs map
+        Map<String, String> envUrls = new LinkedHashMap<>();
+        envUrls.put("DEV",     "https://dev.app.com");
+        envUrls.put("QA",      "https://qa.app.com");
+        envUrls.put("STAGING", "https://staging.app.com");
+        envUrls.put("PROD",    "https://prod.app.com");
+
+        String env = "QA";
+        System.out.println("\nRunning on " + env + ": " + envUrls.get(env));
+
+        // getOrDefault - safe retrieval
+        String url = envUrls.getOrDefault("UAT", "https://qa.app.com");
+        System.out.println("UAT URL (default): " + url);
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Collections Utility Methods
+----------------------------------------------------------
+import java.util.*;
+
+public class CollectionUtils {
+    public static void main(String[] args) {
+        List<Integer> testDurations = new ArrayList<>(
+            Arrays.asList(1200, 345, 876, 2100, 456, 123, 990)
+        );
+
+        System.out.println("Durations: " + testDurations);
+        System.out.println("Max duration: " + Collections.max(testDurations) + "ms");
+        System.out.println("Min duration: " + Collections.min(testDurations) + "ms");
+
+        Collections.sort(testDurations);
+        System.out.println("Sorted: " + testDurations);
+
+        Collections.reverse(testDurations);
+        System.out.println("Reversed: " + testDurations);
+
+        Collections.shuffle(testDurations);
+        System.out.println("Shuffled: " + testDurations);
+
+        // Frequency
+        List<String> statuses = Arrays.asList("PASS","FAIL","PASS","PASS","FAIL","SKIP","PASS");
+        System.out.println("\n--- Test Status Summary ---");
+        System.out.println("PASS count: " + Collections.frequency(statuses, "PASS"));
+        System.out.println("FAIL count: " + Collections.frequency(statuses, "FAIL"));
+        System.out.println("SKIP count: " + Collections.frequency(statuses, "SKIP"));
+
+        // Convert array to list and back
+        String[] browsers = {"chrome","firefox","edge"};
+        List<String> browserList = new ArrayList<>(Arrays.asList(browsers));
+        String[] backToArray = browserList.toArray(new String[0]);
+        System.out.println("\nBack to array[0]: " + backToArray[0]);
+
+        // unmodifiableList - read-only test config
+        List<String> envList = Collections.unmodifiableList(
+            Arrays.asList("DEV", "QA", "STAGING")
+        );
+        System.out.println("Environments: " + envList);
+    }
+}
+
+----------------------------------------------------------
+RESOURCES:
+  - https://www.javatpoint.com/collections-in-java
+  - https://www.baeldung.com/java-collections
+
+PRACTICE TASKS:
+  1. Create a List of 10 test case names and sort them
+  2. Create a Set to store unique browser names (avoid duplicates)
+  3. Create a Map with test case ID -> expected result
+  4. Count PASS/FAIL/SKIP in a List of statuses using frequency()
+==========================================================

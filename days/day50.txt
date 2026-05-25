@@ -1,0 +1,136 @@
+==========================================================
+  DAY 50 - Jenkins Introduction
+  Phase: CI/CD
+==========================================================
+
+OVERVIEW:
+  Jenkins installation, job types, build triggers, workspace, console output
+
+TOPICS COVERED:
+    - Jenkins installation
+  - job types
+  - build triggers
+  - workspace
+  - console output
+
+LEARNING OBJECTIVES:
+  - Understand Jenkins Introduction concepts thoroughly
+  - Apply Jenkins Introduction in test automation scenarios
+  - Be able to explain Jenkins Introduction in interviews
+  - Write production-quality code using Jenkins Introduction
+
+
+----------------------------------------------------------
+EXAMPLE 1: Jenkins Introduction - Fundamentals
+----------------------------------------------------------
+// Topic: Jenkins Introduction
+// Phase: CI/CD
+// Key concepts covered in this example:
+// Jenkins installation
+
+public class Day50Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 50: Jenkins Introduction ===");
+        System.out.println("Phase: CI/CD");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of Jenkins Introduction
+        // Refer to the theory section above and implement:
+        // Jenkins installation
+
+        System.out.println("Day 50 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Jenkins Introduction - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of Jenkins Introduction
+// Key points: job types
+
+public class Day50Example2 {
+    // Define relevant fields and methods for Jenkins Introduction
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: Jenkins Introduction");
+        // Core implementation goes here
+        // Focus on: job types
+    }
+
+    public static void main(String[] args) {
+        Day50Example2 demo = new Day50Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Jenkins Introduction - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying Jenkins Introduction in test automation
+
+public class Day50Example3 {
+
+    // Scenario: Using Jenkins Introduction in an automation framework
+    // This is how Jenkins Introduction is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: Jenkins Introduction");
+        // build triggers
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Jenkins Introduction - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of Jenkins Introduction with best practices
+
+public class Day50Example4 {
+
+    // Best practices for Jenkins Introduction:
+    // 1. Always follow Jenkins Introduction principles consistently
+    // 2. console output
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced Jenkins Introduction demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: Jenkins Introduction");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 50 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 50 with previous days
+  3. Write 2 more examples of your own on Jenkins Introduction
+  4. Push all code to GitHub with commit message: "Day 50: Jenkins Introduction"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: jenkins)
+  - https://www.baeldung.com (search: jenkins)
+  - YouTube: Search "Jenkins Introduction tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is Jenkins Introduction and why is it important in test automation?
+  Q2: How have you used Jenkins Introduction in your previous automation projects?
+  Q3: What are the best practices for Jenkins Introduction?
+  Q4: How does Jenkins Introduction compare with alternatives?
+
+END OF DAY 50
+Review, practice, and push to GitHub before sleeping!
+==========================================================

@@ -1,0 +1,135 @@
+==========================================================
+  DAY 76 - Security Testing Basics
+  Phase: Advanced
+==========================================================
+
+OVERVIEW:
+  OWASP Top 10, SQL injection tests, XSS checks, auth bypass scenarios
+
+TOPICS COVERED:
+    - OWASP Top 10
+  - SQL injection tests
+  - XSS checks
+  - auth bypass scenarios
+
+LEARNING OBJECTIVES:
+  - Understand Security Testing Basics concepts thoroughly
+  - Apply Security Testing Basics in test automation scenarios
+  - Be able to explain Security Testing Basics in interviews
+  - Write production-quality code using Security Testing Basics
+
+
+----------------------------------------------------------
+EXAMPLE 1: Security Testing Basics - Fundamentals
+----------------------------------------------------------
+// Topic: Security Testing Basics
+// Phase: Advanced
+// Key concepts covered in this example:
+// OWASP Top 10
+
+public class Day76Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 76: Security Testing Basics ===");
+        System.out.println("Phase: Advanced");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of Security Testing Basics
+        // Refer to the theory section above and implement:
+        // OWASP Top 10
+
+        System.out.println("Day 76 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Security Testing Basics - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of Security Testing Basics
+// Key points: SQL injection tests
+
+public class Day76Example2 {
+    // Define relevant fields and methods for Security Testing Basics
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: Security Testing Basics");
+        // Core implementation goes here
+        // Focus on: SQL injection tests
+    }
+
+    public static void main(String[] args) {
+        Day76Example2 demo = new Day76Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Security Testing Basics - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying Security Testing Basics in test automation
+
+public class Day76Example3 {
+
+    // Scenario: Using Security Testing Basics in an automation framework
+    // This is how Security Testing Basics is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: Security Testing Basics");
+        // XSS checks
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Security Testing Basics - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of Security Testing Basics with best practices
+
+public class Day76Example4 {
+
+    // Best practices for Security Testing Basics:
+    // 1. Always follow Security Testing Basics principles consistently
+    // 2. auth bypass scenarios
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced Security Testing Basics demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: Security Testing Basics");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 76 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 76 with previous days
+  3. Write 2 more examples of your own on Security Testing Basics
+  4. Push all code to GitHub with commit message: "Day 76: Security Testing Basics"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: security)
+  - https://www.baeldung.com (search: security)
+  - YouTube: Search "Security Testing Basics tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is Security Testing Basics and why is it important in test automation?
+  Q2: How have you used Security Testing Basics in your previous automation projects?
+  Q3: What are the best practices for Security Testing Basics?
+  Q4: How does Security Testing Basics compare with alternatives?
+
+END OF DAY 76
+Review, practice, and push to GitHub before sleeping!
+==========================================================

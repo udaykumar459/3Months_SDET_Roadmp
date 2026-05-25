@@ -1,0 +1,135 @@
+==========================================================
+  DAY 43 - API Logging + Filters
+  Phase: API Testing
+==========================================================
+
+OVERVIEW:
+  RestAssured logging, request/response filters, log().all(), log().ifError()
+
+TOPICS COVERED:
+    - RestAssured logging
+  - request/response filters
+  - log().all()
+  - log().ifError()
+
+LEARNING OBJECTIVES:
+  - Understand API Logging + Filters concepts thoroughly
+  - Apply API Logging + Filters in test automation scenarios
+  - Be able to explain API Logging + Filters in interviews
+  - Write production-quality code using API Logging + Filters
+
+
+----------------------------------------------------------
+EXAMPLE 1: API Logging + Filters - Fundamentals
+----------------------------------------------------------
+// Topic: API Logging + Filters
+// Phase: API Testing
+// Key concepts covered in this example:
+// RestAssured logging
+
+public class Day43Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 43: API Logging + Filters ===");
+        System.out.println("Phase: API Testing");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of API Logging + Filters
+        // Refer to the theory section above and implement:
+        // RestAssured logging
+
+        System.out.println("Day 43 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: API Logging + Filters - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of API Logging + Filters
+// Key points: request/response filters
+
+public class Day43Example2 {
+    // Define relevant fields and methods for API Logging + Filters
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: API Logging + Filters");
+        // Core implementation goes here
+        // Focus on: request/response filters
+    }
+
+    public static void main(String[] args) {
+        Day43Example2 demo = new Day43Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: API Logging + Filters - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying API Logging + Filters in test automation
+
+public class Day43Example3 {
+
+    // Scenario: Using API Logging + Filters in an automation framework
+    // This is how API Logging + Filters is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: API Logging + Filters");
+        // log().all()
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: API Logging + Filters - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of API Logging + Filters with best practices
+
+public class Day43Example4 {
+
+    // Best practices for API Logging + Filters:
+    // 1. Always follow API Logging + Filters principles consistently
+    // 2. log().ifError()
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced API Logging + Filters demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: API Logging + Filters");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 43 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 43 with previous days
+  3. Write 2 more examples of your own on API Logging + Filters
+  4. Push all code to GitHub with commit message: "Day 43: API Logging + Filters"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: api)
+  - https://www.baeldung.com (search: api)
+  - YouTube: Search "API Logging + Filters tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is API Logging + Filters and why is it important in test automation?
+  Q2: How have you used API Logging + Filters in your previous automation projects?
+  Q3: What are the best practices for API Logging + Filters?
+  Q4: How does API Logging + Filters compare with alternatives?
+
+END OF DAY 43
+Review, practice, and push to GitHub before sleeping!
+==========================================================

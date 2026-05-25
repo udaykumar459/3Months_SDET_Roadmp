@@ -1,0 +1,206 @@
+==========================================================
+  DAY 4 - OOP Part 1: Classes, Objects, Constructors
+  Phase: Core Java | Week 1
+==========================================================
+
+TOPICS COVERED:
+  - Class and Object concepts
+  - Instance variables and methods
+  - Constructors (default, parameterized)
+  - 'this' keyword
+  - Access modifiers (public, private, protected)
+
+LEARNING OBJECTIVES:
+  - Model test configuration as objects
+  - Create reusable test components
+  - Understand encapsulation basics
+
+----------------------------------------------------------
+EXAMPLE 1: Basic Class and Object
+----------------------------------------------------------
+public class TestCase {
+    // Instance variables
+    String testId;
+    String testName;
+    String status;
+    String browser;
+
+    // Default constructor
+    public TestCase() {
+        this.status = "NOT_RUN";
+        this.browser = "chrome";
+    }
+
+    // Parameterized constructor
+    public TestCase(String testId, String testName) {
+        this.testId = testId;
+        this.testName = testName;
+        this.status = "NOT_RUN";
+        this.browser = "chrome";
+    }
+
+    // Method
+    public void execute() {
+        System.out.println("Running: " + testId + " - " + testName);
+        this.status = "PASS";
+    }
+
+    public void printResult() {
+        System.out.println("[" + status + "] " + testId + ": " + testName);
+    }
+
+    public static void main(String[] args) {
+        TestCase tc1 = new TestCase("TC001", "Login with valid credentials");
+        TestCase tc2 = new TestCase("TC002", "Login with invalid password");
+
+        tc1.execute();
+        tc2.status = "FAIL";
+
+        tc1.printResult();
+        tc2.printResult();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Test Configuration Class
+----------------------------------------------------------
+public class TestConfig {
+    private String browser;
+    private String baseUrl;
+    private int timeout;
+    private String environment;
+
+    public TestConfig(String browser, String baseUrl, int timeout, String environment) {
+        this.browser = browser;
+        this.baseUrl = baseUrl;
+        this.timeout = timeout;
+        this.environment = environment;
+    }
+
+    // Getters
+    public String getBrowser()      { return browser; }
+    public String getBaseUrl()      { return baseUrl; }
+    public int getTimeout()         { return timeout; }
+    public String getEnvironment()  { return environment; }
+
+    // Setters
+    public void setBrowser(String browser)   { this.browser = browser; }
+    public void setTimeout(int timeout)       { this.timeout = timeout; }
+
+    public void displayConfig() {
+        System.out.println("=== Test Configuration ===");
+        System.out.println("Browser    : " + browser);
+        System.out.println("URL        : " + baseUrl);
+        System.out.println("Timeout    : " + timeout + " seconds");
+        System.out.println("Environment: " + environment);
+    }
+
+    public static void main(String[] args) {
+        TestConfig qaConfig = new TestConfig("chrome", "https://qa.app.com", 30, "QA");
+        TestConfig stagingConfig = new TestConfig("firefox", "https://staging.app.com", 45, "STAGING");
+
+        qaConfig.displayConfig();
+        System.out.println();
+        stagingConfig.displayConfig();
+
+        // Modify config
+        qaConfig.setBrowser("edge");
+        System.out.println("\nUpdated Browser: " + qaConfig.getBrowser());
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: User (Test Data) Class
+----------------------------------------------------------
+public class User {
+    private String username;
+    private String password;
+    private String role;
+    private boolean isActive;
+
+    public User(String username, String password, String role) {
+        this.username = username;
+        this.password = password;
+        this.role = role;
+        this.isActive = true;
+    }
+
+    public String getUsername()  { return username; }
+    public String getPassword()  { return password; }
+    public String getRole()      { return role; }
+    public boolean isActive()    { return isActive; }
+
+    public String toString() {
+        return "User{username='" + username + "', role='" + role + "', active=" + isActive + "}";
+    }
+
+    public static void main(String[] args) {
+        User standardUser  = new User("standard_user", "secret_sauce", "CUSTOMER");
+        User adminUser     = new User("admin_user", "admin_pass", "ADMIN");
+        User lockedUser    = new User("locked_out_user", "secret_sauce", "CUSTOMER");
+        lockedUser.isActive = false;
+
+        System.out.println(standardUser);
+        System.out.println(adminUser);
+        System.out.println(lockedUser);
+        System.out.println("\nLogging in as: " + standardUser.getUsername());
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Multiple Constructors (Constructor Overloading)
+----------------------------------------------------------
+public class WebElement {
+    private String locatorType;
+    private String locatorValue;
+    private String elementName;
+    private int waitTimeout;
+
+    // Constructor 1: minimum info
+    public WebElement(String locatorType, String locatorValue) {
+        this.locatorType = locatorType;
+        this.locatorValue = locatorValue;
+        this.elementName = "Unknown";
+        this.waitTimeout = 10;
+    }
+
+    // Constructor 2: with name
+    public WebElement(String locatorType, String locatorValue, String elementName) {
+        this(locatorType, locatorValue);  // calls constructor 1
+        this.elementName = elementName;
+    }
+
+    // Constructor 3: full
+    public WebElement(String locatorType, String locatorValue, String elementName, int waitTimeout) {
+        this(locatorType, locatorValue, elementName);  // calls constructor 2
+        this.waitTimeout = waitTimeout;
+    }
+
+    public void describe() {
+        System.out.println("Element: " + elementName +
+                           " | " + locatorType + "='" + locatorValue +
+                           "' | Wait: " + waitTimeout + "s");
+    }
+
+    public static void main(String[] args) {
+        WebElement loginBtn  = new WebElement("id", "login-button", "Login Button");
+        WebElement username  = new WebElement("id", "user-name", "Username Field", 20);
+        WebElement password  = new WebElement("id", "password");
+
+        loginBtn.describe();
+        username.describe();
+        password.describe();
+    }
+}
+
+----------------------------------------------------------
+RESOURCES:
+  - https://www.javatpoint.com/object-and-class-in-java
+  - https://www.w3schools.com/java/java_oop.asp
+
+PRACTICE TASKS:
+  1. Create a TestSuite class with suiteName, totalTests, passedTests, failedTests
+  2. Add a method to calculate and print pass percentage
+  3. Create 3 TestSuite objects with different data
+  4. Create a Browser class with name, version, headless fields
+==========================================================

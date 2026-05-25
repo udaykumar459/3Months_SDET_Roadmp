@@ -1,0 +1,137 @@
+==========================================================
+  DAY 28 - Cucumber BDD
+  Phase: Selenium
+==========================================================
+
+OVERVIEW:
+  Feature files, Gherkin syntax, StepDefinitions, Hooks, Scenario Outline, Tags
+
+TOPICS COVERED:
+    - Feature files
+  - Gherkin syntax
+  - StepDefinitions
+  - Hooks
+  - Scenario Outline
+  - Tags
+
+LEARNING OBJECTIVES:
+  - Understand Cucumber BDD concepts thoroughly
+  - Apply Cucumber BDD in test automation scenarios
+  - Be able to explain Cucumber BDD in interviews
+  - Write production-quality code using Cucumber BDD
+
+
+----------------------------------------------------------
+EXAMPLE 1: Cucumber BDD - Fundamentals
+----------------------------------------------------------
+// Topic: Cucumber BDD
+// Phase: Selenium
+// Key concepts covered in this example:
+// Feature files
+
+public class Day28Example1 {
+    public static void main(String[] args) {
+        System.out.println("=== Day 28: Cucumber BDD ===");
+        System.out.println("Phase: Selenium");
+        System.out.println("Starting practice...");
+
+        // Practice the fundamentals of Cucumber BDD
+        // Refer to the theory section above and implement:
+        // Feature files
+
+        System.out.println("Day 28 - Example 1 Complete!");
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: Cucumber BDD - Core Implementation
+----------------------------------------------------------
+// Implement the core concept of Cucumber BDD
+// Key points: Gherkin syntax
+
+public class Day28Example2 {
+    // Define relevant fields and methods for Cucumber BDD
+
+    public void demonstrate() {
+        System.out.println("Demonstrating: Cucumber BDD");
+        // Core implementation goes here
+        // Focus on: Gherkin syntax
+    }
+
+    public static void main(String[] args) {
+        Day28Example2 demo = new Day28Example2();
+        demo.demonstrate();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Cucumber BDD - Real-World Automation Scenario
+----------------------------------------------------------
+// Real-world scenario applying Cucumber BDD in test automation
+
+public class Day28Example3 {
+
+    // Scenario: Using Cucumber BDD in an automation framework
+    // This is how Cucumber BDD is used in real SDET projects
+
+    public static void runScenario() {
+        System.out.println("Running real-world scenario for: Cucumber BDD");
+        // StepDefinitions
+        System.out.println("Scenario complete!");
+    }
+
+    public static void main(String[] args) {
+        runScenario();
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Cucumber BDD - Advanced Usage + Best Practices
+----------------------------------------------------------
+// Advanced usage of Cucumber BDD with best practices
+
+public class Day28Example4 {
+
+    // Best practices for Cucumber BDD:
+    // 1. Always follow Cucumber BDD principles consistently
+    // 2. Tags
+    // 3. Test your implementation thoroughly
+    // 4. Document edge cases
+
+    public static void advancedDemo() {
+        System.out.println("Advanced Cucumber BDD demonstration");
+        // Implement advanced scenarios here
+
+        // Best practice: combine with other SDET skills
+        System.out.println("Best practices applied for: Cucumber BDD");
+    }
+
+    public static void main(String[] args) {
+        advancedDemo();
+        System.out.println("Day 28 - All examples complete!");
+        System.out.println("Next: Review and push code to GitHub");
+    }
+}
+
+----------------------------------------------------------
+PRACTICE TASKS:
+  1. Implement all 4 examples above from scratch (no copy-paste)
+  2. Create a mini-project combining Day 28 with previous days
+  3. Write 2 more examples of your own on Cucumber BDD
+  4. Push all code to GitHub with commit message: "Day 28: Cucumber BDD"
+
+RESOURCES:
+  - https://www.javatpoint.com (search: cucumber)
+  - https://www.baeldung.com (search: cucumber)
+  - YouTube: Search "Cucumber BDD tutorial for SDET"
+  - Official docs for the framework/tool covered today
+
+INTERVIEW QUESTIONS FOR THIS TOPIC:
+  Q1: What is Cucumber BDD and why is it important in test automation?
+  Q2: How have you used Cucumber BDD in your previous automation projects?
+  Q3: What are the best practices for Cucumber BDD?
+  Q4: How does Cucumber BDD compare with alternatives?
+
+END OF DAY 28
+Review, practice, and push to GitHub before sleeping!
+==========================================================

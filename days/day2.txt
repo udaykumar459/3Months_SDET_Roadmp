@@ -1,0 +1,165 @@
+==========================================================
+  DAY 2 - Operators, Conditionals, Loops
+  Phase: Core Java | Week 1
+==========================================================
+
+TOPICS COVERED:
+  - Arithmetic, Relational, Logical Operators
+  - if / else if / else
+  - switch statement
+  - for, while, do-while loops
+  - break and continue
+
+LEARNING OBJECTIVES:
+  - Control program flow
+  - Use conditions for test validations
+  - Loop through test data
+
+----------------------------------------------------------
+EXAMPLE 1: Operators
+----------------------------------------------------------
+public class OperatorsDemo {
+    public static void main(String[] args) {
+        int a = 10, b = 3;
+
+        // Arithmetic
+        System.out.println("Add: " + (a + b));
+        System.out.println("Sub: " + (a - b));
+        System.out.println("Mul: " + (a * b));
+        System.out.println("Div: " + (a / b));
+        System.out.println("Mod: " + (a % b));
+
+        // Relational
+        System.out.println("a > b: " + (a > b));
+        System.out.println("a == b: " + (a == b));
+        System.out.println("a != b: " + (a != b));
+
+        // Logical
+        boolean isLoggedIn = true;
+        boolean hasPermission = false;
+        System.out.println("AND: " + (isLoggedIn && hasPermission));
+        System.out.println("OR: " + (isLoggedIn || hasPermission));
+        System.out.println("NOT: " + (!isLoggedIn));
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 2: if/else for Test Validation
+----------------------------------------------------------
+public class TestValidation {
+    public static void main(String[] args) {
+        int statusCode = 200;
+        String pageTitle = "Swag Labs";
+        int itemCount = 6;
+
+        // Validate status code
+        if (statusCode == 200) {
+            System.out.println("PASS: Page loaded successfully");
+        } else if (statusCode == 404) {
+            System.out.println("FAIL: Page not found");
+        } else if (statusCode == 500) {
+            System.out.println("FAIL: Server error");
+        } else {
+            System.out.println("FAIL: Unexpected status - " + statusCode);
+        }
+
+        // Validate page title
+        if (pageTitle.equals("Swag Labs")) {
+            System.out.println("PASS: Page title matches");
+        } else {
+            System.out.println("FAIL: Expected 'Swag Labs' but got '" + pageTitle + "'");
+        }
+
+        // Validate item count
+        if (itemCount >= 1) {
+            System.out.println("PASS: " + itemCount + " items found on page");
+        } else {
+            System.out.println("FAIL: No items found on page");
+        }
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 3: Switch for Browser Selection
+----------------------------------------------------------
+public class BrowserSelector {
+    public static void main(String[] args) {
+        String browser = "firefox";
+
+        switch (browser.toLowerCase()) {
+            case "chrome":
+                System.out.println("Launching Google Chrome");
+                System.out.println("ChromeDriver path: drivers/chromedriver");
+                break;
+            case "firefox":
+                System.out.println("Launching Mozilla Firefox");
+                System.out.println("GeckoDriver path: drivers/geckodriver");
+                break;
+            case "edge":
+                System.out.println("Launching Microsoft Edge");
+                System.out.println("EdgeDriver path: drivers/msedgedriver");
+                break;
+            case "safari":
+                System.out.println("Launching Safari (Mac only)");
+                break;
+            default:
+                System.out.println("ERROR: Browser '" + browser + "' not supported!");
+                System.out.println("Supported browsers: chrome, firefox, edge, safari");
+        }
+    }
+}
+
+----------------------------------------------------------
+EXAMPLE 4: Loops for Test Data
+----------------------------------------------------------
+public class LoopsDemo {
+    public static void main(String[] args) {
+        // for loop - run test cases
+        System.out.println("=== Running Test Suite ===");
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Executing TC_00" + i);
+        }
+
+        // while loop - retry mechanism
+        int retryCount = 0;
+        int maxRetry = 3;
+        boolean testPassed = false;
+        while (retryCount < maxRetry && !testPassed) {
+            retryCount++;
+            System.out.println("Attempt " + retryCount + ": Running test...");
+            if (retryCount == 2) {
+                testPassed = true;
+                System.out.println("Test PASSED on attempt " + retryCount);
+            }
+        }
+
+        // for-each loop - iterate test environments
+        String[] environments = {"DEV", "QA", "STAGING", "PROD"};
+        System.out.println("\n=== Test Environments ===");
+        for (String env : environments) {
+            System.out.println("Testing on: " + env);
+        }
+
+        // break and continue
+        System.out.println("\n=== Skip PROD environment ===");
+        for (String env : environments) {
+            if (env.equals("PROD")) {
+                System.out.println("Skipping PROD - automation not allowed");
+                continue;
+            }
+            System.out.println("Running tests on: " + env);
+        }
+    }
+}
+
+----------------------------------------------------------
+RESOURCES:
+  - https://www.javatpoint.com/java-control-flow
+  - https://www.w3schools.com/java/java_conditions.asp
+
+PRACTICE TASKS:
+  1. Write a program to check if a HTTP status code is pass/fail
+  2. Use switch to print test environment URLs
+  3. Loop through 10 test case names and print them
+  4. Implement a retry loop that retries a failing test 3 times
+==========================================================
